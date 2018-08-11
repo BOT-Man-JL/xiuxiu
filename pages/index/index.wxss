@@ -24,12 +24,9 @@
   display: flex;
   flex-direction:row ;
   margin: 10px;
-  margin-bottom: 5px;
-}
-
-.avatar_container{
-  display: flex;
-  flex-direction:row;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px;
 }
 
 .avatar{
@@ -72,18 +69,19 @@
   display: flex;
   flex-direction:row ;
   align-items:flex-end;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .list-item .location-icon{
-  width: 17px;
-  height: 17px;
-  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
 }
 
 .list-item .list-item-main-text{
   margin: 10px;
   font-size: 16px;
+  text-align: justify;
 }
 
 .list-item .image-album{
