@@ -10,19 +10,35 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "color": "#999",
-    "selectedColor": "#2EBF76",
-    "borderStyle": "white",
-    "backgroundColor": "#f6f8f9",
+    "color": "#777777",
+    "selectedColor": "#366CB3",
+    "borderStyle": "#E7ECEF",
+    "backgroundColor": "#FFFFFF",
     "position": "bottom",
     "list": [
       {
+        "iconPath": "resources/tabbar/home-gray.png",
+        "selectedIconPath": "resources/tabbar/home-blue.png",
         "pagePath": "pages/index/index",
-        "text": "主页"
+        "text": "首页"
       },
       {
+        "iconPath": "resources/tabbar/circle-gray.png",
+        "selectedIconPath": "resources/tabbar/circle-blue.png",
         "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "text": "圈子"
+      },
+      {
+        "iconPath": "resources/tabbar/flavor-gray.png",
+        "selectedIconPath": "resources/tabbar/flavor-blue.png",
+        "pagePath": "pages/logs/logs",
+        "text": "爆料"
+      },
+      {
+        "iconPath": "resources/tabbar/my-gray.png",
+        "selectedIconPath": "resources/tabbar/my-blue.png",
+        "pagePath": "pages/logs/logs",
+        "text": "我的"
       }
     ]
   }
