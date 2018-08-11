@@ -1,13 +1,60 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+
+<!--每一条内容-->
+<view>
+
+  <view class='list-item'>
+    <!--作者头像-->
+    <view class="avatar">
+      <image class="avatar" mode="aspectFill" src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
+    </view>
+
+    <!--右边的部分-->
+    <view class='list-item-right'>
+      <!--右边的发布者信息-->
+      <view class="list-item-header">
+        <text class="item-author-text">邻家那点事</text>
+        <view class="list-item-detail">
+          <text class="list-item-text">1小时前</text>
+          <view class="location-container">
+            <image class="location-icon" src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
+            <text class="list-item-text">知春路</text>
+          </view>
+        </view>
+
+        <!--右边发布的内容-->
+        <view class='list-item-main-text'>
+          <text>十号线地铁里竟然有个女生在抽烟，有个大爷提醒她，女生居然还大骂大爷...大家怎么看？十号线地铁里竟然有个女生在抽烟，大家怎么看？</text>
+        </view>
+        <view class='image-album'>
+          <image class='image-album-content' src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
+          <image class='image-album-content' src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
+          <image class='image-album-content' src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
+        </view>
+        <view class='video-item'>
+          <image src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
+        </view>
+        <view class='large-image-item'>
+          <image src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
+        </view>
+
+        <!--底部的按钮：加火、留言和分享-->
+        <view class='item-action'>
+          <view class='icon-with-text-fire'>
+            <image class='action-icon' src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
+            <text class='action-text'> 998</text>
+          </view>
+          <view class='icon-with-text-reply'>
+            <image class='action-icon' src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
+            <text class='action-text'> 998</text>
+          </view>
+          <view class='share-container'>
+          <image class='share-icon' src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg"/>
+          </view>
+        </view>
+      </view>
+    </view>
+
   </view>
-  <view class="usermotto">
-    <text class="user-motto" id="motto" style='color: #0F0;'>{{motto}}</text>
-  </view>
+
 </view>
