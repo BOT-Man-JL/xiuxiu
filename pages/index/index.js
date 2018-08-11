@@ -1,5 +1,7 @@
 //index.js
 //获取应用实例
+import util from '../../utils/util'
+
 const app = getApp()
 
 Page({
@@ -14,6 +16,12 @@ Page({
     wx.navigateTo({
       url: '../logs/logs'
     })
+    util.request({
+      url: 'https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22'
+    }).then(
+      (res) => console.log(res),
+      (res) => console.error(res)
+    )
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
