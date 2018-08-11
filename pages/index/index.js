@@ -76,7 +76,8 @@ Page({
       location: '知春路',
       articleData: {
         thumb: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
-        abstractText: '十号线地铁里竟然有个女生在抽烟，有个大爷提醒她，女生居然还大骂大爷...大家怎么看？十号线地铁里竟然有个女生在抽烟，大家怎么看？'
+        abstractText: '从少年天才到大器晚成，为什么他才是阿森纳最佳？从少年天才到大器晚成，为什么他才是阿森',
+        text:'火箭少女空降希格玛！和每一位小姐姐握了手超开心了！火箭少女空降希格玛！！'
       },
       fireCount: 998,
       commentCount: 998
