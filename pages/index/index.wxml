@@ -1,7 +1,7 @@
 <!--index.wxml-->
 
 <!--每一条内容-->
-<view wx:for="{{ articleList }}">
+<view class="list-container" wx:for="{{ articleList }}">
   <view class="list-item">
     <!--作者头像-->
     <view class="avatar-container">
