@@ -1,8 +1,8 @@
 <!--index.wxml-->
 
 <!--每一条内容-->
-<view class="list-container" wx:for="{{ articleList }}">
-  <view class="list-item">
+<view class="list-container">
+  <view class="list-item" wx:for="{{ articleList }}" wx:key="id">
     <!--作者头像-->
     <view class="avatar-container">
       <image class="avatar" mode="aspectFill" src="{{ item.authorAvatar }}" />
@@ -22,48 +22,54 @@
         </view>
 
         <!--右边发布的内容-->
-        <view wx:if="{{ item.articleData.text }}" class="list-item-main-text">
-          <text>{{ item.articleData.text}}</text>
-        </view>
+        <view class="list-item-data-container">
+          <!-- 文本 -->
+          <view wx:if="{{ item.articleData.text }}" class="list-item-main-text">
+            <text>{{ item.articleData.text}}</text>
+          </view>
 
-        <view wx:if="{{ item.articleType == 'pictures' }}" class="image-album">
-          <image class="image-album-content" mode="aspectFill" src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
-          <image class="image-album-content" mode="aspectFill" src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
-          <image class="image-album-content" mode="aspectFill" src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
-        </view>
+          <!-- 图片 -->
+          <view wx:if="{{ item.articleType == 'picture' }}" class="large-image-item">
+            <image src="{{ item.articleData.picture.src }}" mode="widthFix" />
+          </view>
 
-        <view wx:if="{{ item.articleType == 'video' }}" class="video-item">
-          <image src="https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg" />
-        </view>
+          <!-- 图集 -->
+          <view wx:if="{{ item.articleType == 'pictures' }}" class="image-album">
+            <image wx:for="{{ item.articleData.pictures }}" wx:for-item="picture" wx:key="url" src="{{ picture.src }}" mode="widthFix" />
+          </view>
 
-        <view wx:if="{{ item.articleType == 'picture' }}" class="large-image-item">
-          <image src="{{ item.articleData.picture.url }}" />
-        </view>
+          <!-- 视频 -->
+          <view wx:if="{{ item.articleType == 'video' }}" class="video-item">
+            <video src="{{ item.articleData.video.src }}" poster="{{ item.articleData.video.poster }}" />
+          </view>
 
-        <view wx:if="{{ item.articleType == 'link' }}" class="link-item">
-          <image class="link-thumb-image" src="{{ item.articleData.thumb }}" />
-          <view wx:if="{{ item.articleData.abstractText }}" class="list-item-main-text">
-            <text class="link-text">{{ item.articleData.abstractText}}</text>
+          <!-- 外链 -->
+          <view wx:if="{{ item.articleType == 'link' }}" class="link-item">
+            <image src="{{ item.articleData.link.thumb }}" mode="widthFix" />
+            <text>{{ item.articleData.link.abstractText}}</text>
           </view>
         </view>
 
-        <!--底部的按钮：加火、留言和分享-->
+        <!-- 底部的按钮 -->
         <view class="item-action">
-          <view class="icon-with-text-fire">
-            <image class="action-icon" src="../../resources/home/fire-gray.png" />
-            <text class="action-text">{{ item.fireCount }}</text>
+          <view class="item-action-left">
+            <!-- 加火 -->
+            <view class="icon-with-text">
+              <image class="action-icon" src="../../resources/home/fire-gray.png" />
+              <text class="action-text">{{ item.fireCount }}</text>
+            </view>
+            <!-- 评论 -->
+            <view class="icon-with-text">
+              <image class="action-icon" src="../../resources/home/comment.png" />
+              <text class="action-text">{{ item.commentCount }}</text>
+            </view>
           </view>
-          <view class="icon-with-text-reply">
-            <image class="action-icon" src="../../resources/home/comment.png" />
-            <text class="action-text">{{ item.commentCount }}</text>
-          </view>
-          <view class="share-container">
+          <!-- 分享 -->
+          <view class=".item-action-right">
             <image class="share-icon" src="../../resources/home/share.png" />
           </view>
         </view>
       </view>
     </view>
-
   </view>
-
 </view>
