@@ -2,7 +2,7 @@
 
 <view class="top-bar">
   <view class="icon-with-text">
-    <image class="location-icon" src="../../resources/home/location-gray.png" />
+    <image class="location-icon" src="../../resources/home/location-white.png" />
     <text class="location-text">{{ locationText }}</text>
   </view>
 </view>
