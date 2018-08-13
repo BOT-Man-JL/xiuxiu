@@ -5,19 +5,19 @@
   <view class="list-item" wx:for="{{ articleList }}" wx:key="id">
     <!--作者头像-->
     <view class="avatar-container">
-      <image class="avatar" mode="aspectFill" src="{{ item.authorAvatar }}" />
+      <image class="avatar" mode="aspectFill" src="{{ item.metaData.authorAvatar }}" />
     </view>
 
     <!--右边的部分-->
     <view class="list-item-right">
       <!--右边的发布者信息-->
       <view class="list-item-header">
-        <text class="item-author-text">{{ item.authorName }}</text>
+        <text class="item-author-text">{{ item.metaData.authorName }}</text>
         <view class="list-item-detail">
-          <text class="list-item-text">{{ item.timestamp }}</text>
+          <text class="list-item-text">{{ item.metaData.timestamp }}</text>
           <view class="location-container">
             <image class="location-icon" src="../../resources/home/location-gray.png" />
-            <text class="list-item-text">{{ item.location }}</text>
+            <text class="list-item-text">{{ item.metaData.location }}</text>
           </view>
         </view>
 
@@ -56,12 +56,12 @@
             <!-- 加火 -->
             <view class="icon-with-text">
               <image class="action-icon" src="../../resources/home/fire-gray.png" />
-              <text class="action-text">{{ item.fireCount }}</text>
+              <text class="action-text">{{ item.communityData.fireCount }}</text>
             </view>
             <!-- 评论 -->
             <view class="icon-with-text">
               <image class="action-icon" src="../../resources/home/comment.png" />
-              <text class="action-text">{{ item.commentCount }}</text>
+              <text class="action-text">{{ item.communityData.commentCount }}</text>
             </view>
           </view>
           <!-- 分享 -->

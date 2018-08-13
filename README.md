@@ -6,83 +6,114 @@
 
 ### Index
 
-``` json
+直接修改数据文件：
 
-{
-  "articleList": [
-    {
-      "id": "1234",
-      "title": "超好看的图集",
-      "abstract": "这个图集真好看...",
-      "type": "pictures",
-      "picturesNum": "3",
-      "picturesUrlList": ["图片地址1","图片地址2","图片地址3"],
-      "location": "知春路",
-      "timestamp" : "1533979393",
-      "userName": "zhangsan",
-      "avatar": "头像地址",
-      "fireNum": "202",
-      "commentNum": "200"
-    },
-    {
-      "id": "1234",
-      "title": "超好看的图片",
-      "abstract": "这个图片真好看...",
-      "type": "bigPicture",
-      "bigPictureUrl": "图片地址",
-      "location": "知春路",
-      "timestamp" : "1533979393",
-      "userName": "zhangsan",
-      "avatar": "头像地址",
-      "fireNum": "202",
-      "commentNum": "200"
-    },
-    {
-      "id": "1234",
-      "title": "超好看的video",
-      "abstract": "这个视频真好看...",
-      "type": "video",
-      "videoUrl":"https://www.youtube.com/watch?v=8j9zMok6two",
-      "visitCount": "132",
-      "videoTime": "01:42",
-      "location": "知春路",
-      "timestamp" : "1533979393",
-      "userName": "张三",
-      "avatar": "头像地址",
-      "fireNum": "202",
-      "commentNum": "200"
-    },
-    {
-      "id": "1234",
-      "title": "超好看的文章",
-      "abstract": "这个文章真好看...",
-      "type": "article",
-      "location": "知春路",
-      "timestamp" : "1533979393",
-      "userName": "zhangsan",
-      "avatar": "头像地址",
-      "fireNum": "202",
-      "commentNum": "200"
-    },
-    {
-      "id": "1234",
-      "title": "超好看的链接文章",
-      "abstract": "这个链接文章真好看...",
-      "linkAbstract": "据说看过这个超链文章...",
-      "linkPicture": "链接中的图片地址",
-      "type": "linkArticle",
-      "linkUrl": "链接地址",
-      "location": "知春路",
-      "timestamp" : "1533979393",
-      "userName": "zhangsan",
-      "avatar": "头像地址",
-      "fireNum": "202",
-      "commentNum": "200"
-    }
-  ]
-}
+[resources/home/mock-data.js](resources/home/mock-data.js)
 
+#### articleList
+
+``` js
+articleList: [
+  articleItem,
+  articleItem,
+  // ...
+]
 ```
+
+#### articleItem
+
+``` js
+articleItem: {
+  id: '1',
+  articleType: 'text',
+  metaData: { },
+  articleData: { },
+  communityData: { }
+}
+```
+
+name | type | description | example
+-----|------|-------------|--------
+id | string | 文章 ID | `1`
+articleType | string | 文章类型 | `[text|picture|pictures|video|link]`
+metaData | object | 元数据 | shown below
+articleData | object | 文章数据 | shown below
+communityData | object | 交互数据 | shown below
+
+#### metaData
+
+``` js
+metaData: {
+  authorAvatar: 'http://...jpg',
+  authorName: 'John Lee',
+  timestamp: '一小时前',
+  location: '知春路',
+  circle: '希格玛大厦'
+}
+```
+
+name | type | description | example
+-----|------|-------------|--------
+authorAvatar | string | 作者头像 url | `http://...[jpg|png]`
+authorName | string | 作者名称 | `John`
+timestamp | string | 条目时间戳 | `一小时前`
+location | string | 条目地理位置 | `知春路`
+circle | string (optional) | 圈子名称 | `希格玛大厦`
+
+#### articleData
+
+``` js
+articleData: {
+  text: '...',
+  picture: {
+    src: 'http://...jpg'
+  },
+  pictures: [{
+    src: 'http://...jpg'
+  }, {
+    src: 'http://...jpg'
+  }, {
+    src: 'http://...jpg'
+  }],
+  video: {
+    poster: 'http://...jpg',
+    src: 'http://...'
+  },
+  link: {
+    thumb: 'http://...jpg',
+    abstractText: '...',
+    targetUrl: 'http://...'
+  }
+}
+```
+
+name | type | description | example
+-----|------|-------------|--------
+text | string | 文章正文 | `...`
+picture | object | 图片数据（`articleType: 'picture'`） |
+picture.src | string | 图片 url | `http://...[jpg|png]`
+pictures | array | 图集数据（`articleType: 'pictures'`） |
+pictures.item.src | string | 图集中图片 url | `http://...[jpg|png]`
+video | object | 视频数据（`articleType: 'video'`） |
+video.poster | string | 视频封面图片 url | `http://...[jpg|png]`
+video.src | string | 视频来源 url | `http://...`
+link | object | 外链数据（`articleType: 'link'`） |
+link.thumb | string | 外链缩略图 | `http://...[jpg|png]`
+link.abstractText | string | 外链摘要文本 | `...`
+
+#### articleData
+
+``` js
+communityData: {
+  fireCount: 666,
+  commentCount: 998
+}
+```
+
+name | type | description | example
+-----|------|-------------|--------
+fireCount | number | 加火数目 | 666
+commentCount | number | 评论数目 | 998
 
 ## Resources
 
