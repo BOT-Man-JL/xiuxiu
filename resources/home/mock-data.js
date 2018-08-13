@@ -4,39 +4,39 @@ export default {
     id: '1',
     articleType: 'text',
     metaData: {
-      authorAvatar: 'http://pic.qqtn.com/up/2017-11/2017112315111758254.jpg',
-      authorName: '不吃鱼的猫',
-      timestamp: '一小时前',
-      location: '知春路'
+      authorAvatar: 'https://s1.ax1x.com/2018/08/13/PgrLy6.jpg',
+      authorName: '北京发布',
+      timestamp: '五分钟前',
+      location: '回龙观'
     },
     articleData: {
-      text: '大雨滂沱之前\n我爱你，么么哒\n傅菁~~~~~~~~~~~~',
+      text: '为解决回龙观新村广大居民的公共交通出行需求，2018年8月17日首车起，北京公交集团将实施回龙观新村区域公交线网的整体优化。其中，307路、专29、963路3条线路将进驻回龙观新村。',
     },
     communityData: {
-      fireCount: 157,
-      commentCount: 32
+      fireCount: 15779,
+      commentCount: 832
     }
   }, {
-    id: '3',
+    id: '2',
     articleType: 'picture',
     metaData: {
       authorAvatar: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
       authorName: 'John Lee',
       timestamp: '一小时前',
-      location: '知春路'
+      location: '房山区'
     },
     articleData: {
-      text: '十号线地铁里竟然有个女生在抽烟，有个大爷提醒她，女生居然还大骂大爷...大家怎么看？十号线地铁里竟然有个女生在抽烟，大家怎么看？',
+      text: '北京房山大安山道路山体塌方！房山区X209军红路大安山乡K19+300处发生山体塌方，造成道路阻断。提醒大家，最近雨天多，尽量不要去北京周边山区！',
       picture: {
-        src: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg'
+        src: 'https://s1.ax1x.com/2018/08/13/PgrjeO.jpg'
       }
     },
     communityData: {
-      fireCount: 666,
+      fireCount: 6666,
       commentCount: 998
     }
   }, {
-    id: '2',
+    id: '3',
     articleType: 'pictures',
     metaData: {
       authorAvatar: 'http://pic.qqtn.com/up/2017-11/2017112315111750386.jpg',
@@ -55,8 +55,8 @@ export default {
       }]
     },
     communityData: {
-      fireCount: 12345,
-      commentCount: 678
+      fireCount: 345,
+      commentCount: 78
     }
   }, {
     id: '4',
