@@ -10,10 +10,7 @@ export default {
       location: '知春路'
     },
     articleData: {
-      text: '大雨滂沱之前，
-             穿越人海到你身边，
-             等你出现，窥见彩虹，
-             傅菁，毛毛哒',
+      text: '大雨滂沱之前\n我爱你，么么哒\n傅菁~~~~~~~~~~~~',
     },
     communityData: {
       fireCount: 157,
