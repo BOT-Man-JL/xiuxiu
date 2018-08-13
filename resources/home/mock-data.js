@@ -1,4 +1,5 @@
 export default {
+  locationText: '希格玛大厦',
   articleList: [{
     id: '1',
     articleType: 'text',

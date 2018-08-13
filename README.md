@@ -119,6 +119,7 @@ commentCount | number | 评论数目 | 998
 
 **WARNING**: DON'T add password/appid/key to this document!
 
+- Design: https://modao.cc/app/428fb4cafb14592201b82e37874b86c4ac033360?inapp=1
 - Tutorial: https://github.com/ikcamp/wechat-xcx-tutorial
 - Wechat Side Page: https://mp.weixin.qq.com/
 

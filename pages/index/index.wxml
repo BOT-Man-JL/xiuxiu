@@ -1,5 +1,12 @@
 <!--index.wxml-->
 
+<view class="top-bar">
+  <view class="icon-with-text">
+    <image class="location-icon" src="../../resources/home/location-gray.png" />
+    <text class="location-text">{{ locationText }}</text>
+  </view>
+</view>
+
 <!--每一条内容-->
 <view class="list-container">
   <view class="list-item" wx:for="{{ articleList }}" wx:key="id">

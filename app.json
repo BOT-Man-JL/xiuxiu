@@ -1,14 +1,14 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs"
   ],
-  "window":{
+  "window": {
     "backgroundColor": "#f0f0f0",
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f0f0f0",
-    "navigationBarTitleText": "嗅嗅",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "嗅嗅新鲜事",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#777777",
