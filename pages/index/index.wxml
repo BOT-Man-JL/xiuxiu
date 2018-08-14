@@ -2,7 +2,7 @@
 
 <view class="top-bar">
   <view class="icon-with-text">
-    <image class="location-icon" src="../../resources/home/location-white.png" />
+    <image class="location-icon" src="/resources/home/location-white.png" />
     <text class="location-text">{{ locationText }}</text>
   </view>
 </view>
@@ -23,7 +23,7 @@
         <view class="list-item-detail">
           <text class="list-item-text">{{ item.metaData.timestamp }}</text>
           <view class="location-container">
-            <image class="location-icon" src="../../resources/home/location-gray.png" />
+            <image class="location-icon" src="/resources/home/location-gray.png" />
             <text class="list-item-text">{{ item.metaData.location }}</text>
           </view>
         </view>
@@ -62,18 +62,18 @@
           <view class="item-action-left">
             <!-- 加火 -->
             <view class="icon-with-text">
-              <image class="action-icon" src="../../resources/home/fire-gray.png" />
+              <image class="action-icon" src="/resources/home/fire-gray.png" />
               <text class="action-text">{{ item.communityData.fireCount }}</text>
             </view>
             <!-- 评论 -->
             <view class="icon-with-text">
-              <image class="action-icon" src="../../resources/home/comment.png" />
+              <image class="action-icon" src="/resources/home/comment.png" />
               <text class="action-text">{{ item.communityData.commentCount }}</text>
             </view>
           </view>
           <!-- 分享 -->
           <view class=".item-action-right">
-            <image class="share-icon" src="../../resources/home/share.png" />
+            <image class="share-icon" src="/resources/home/share.png" />
           </view>
         </view>
       </view>

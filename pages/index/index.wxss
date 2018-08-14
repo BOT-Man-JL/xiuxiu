@@ -17,6 +17,7 @@ page {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
   color: #FFFFFF;
   background: #366CB3;
+  z-index: 9999;
 }
 
 .top-bar .icon-with-text {
@@ -152,6 +153,7 @@ page {
   margin-right: 6px;
   border-radius: 3px;
   width: 60px;
+  height: 60px;
 }
 
 .list-item .link-item text {
