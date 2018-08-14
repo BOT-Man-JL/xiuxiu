@@ -111,6 +111,10 @@ page {
   margin-right: 3px;
 }
 
+.list-item .list-item-text.blue-text {
+  color: #366CB3;
+}
+
 /* right panel: article data */
 
 .list-item-data-container {
@@ -146,6 +150,7 @@ page {
   flex-direction: row;
   align-items: center;
   background: #f8f8f8;
+  padding: 5px;
   border-radius: 3px;
 }
 
@@ -159,6 +164,7 @@ page {
 .list-item .link-item text {
   font-size: 14px;
   color: #9c9c9c;
+  text-align: justify;
   flex: 1;
 }
 

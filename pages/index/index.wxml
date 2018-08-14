@@ -9,7 +9,7 @@
 
 <!--每一条内容-->
 <view class="list-container">
-  <view class="list-item" wx:for="{{ articleList }}" wx:key="id">
+  <view wx:for="{{ articleList }}" wx:key="id" class="list-item">
     <!--作者头像-->
     <view class="avatar-container">
       <image class="avatar" mode="aspectFill" src="{{ item.metaData.authorAvatar }}" />
@@ -22,7 +22,11 @@
         <text class="item-author-text">{{ item.metaData.authorName }}</text>
         <view class="list-item-detail">
           <text class="list-item-text">{{ item.metaData.timestamp }}</text>
-          <view class="location-container">
+          <view wx:if="{{ item.metaData.circle }}" class="location-container">
+            <image class="location-icon" src="/resources/home/circle-blue.png" />
+            <text class="list-item-text blue-text">{{ item.metaData.circle }}</text>
+          </view>
+          <view wx:else class="location-container">
             <image class="location-icon" src="/resources/home/location-gray.png" />
             <text class="list-item-text">{{ item.metaData.location }}</text>
           </view>
@@ -32,7 +36,7 @@
         <view class="list-item-data-container">
           <!-- 文本 -->
           <view wx:if="{{ item.articleData.text }}" class="list-item-main-text">
-            <text>{{ item.articleData.text}}</text>
+            <text>{{ item.articleData.text }}</text>
           </view>
 
           <!-- 图片 -->
@@ -46,14 +50,14 @@
           </view>
 
           <!-- 视频 -->
-          <view wx:if="{{ item.articleType == 'video' }}" class="video-item">
+          <!-- <view wx:if="{{ item.articleType == 'video' }}" class="video-item">
             <video src="{{ item.articleData.video.src }}" poster="{{ item.articleData.video.poster }}" />
-          </view>
+          </view> -->
 
           <!-- 外链 -->
           <view wx:if="{{ item.articleType == 'link' }}" class="link-item">
             <image src="{{ item.articleData.link.thumb }}" mode="widthFix" />
-            <text>{{ item.articleData.link.abstractText}}</text>
+            <text>{{ item.articleData.link.abstractText }}</text>
           </view>
         </view>
 

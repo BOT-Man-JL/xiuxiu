@@ -7,7 +7,7 @@ export default {
       authorAvatar: 'http://pic.qqtn.com/up/2017-11/2017112315111758254.jpg',
       authorName: '不吃鱼的猫',
       timestamp: '一小时前',
-      location: '知春路'
+      circle: '希格玛大厦'
     },
     articleData: {
       text: '大雨滂沱之前\n我爱你，么么哒\n傅菁~~~~~~~~~~~~',
@@ -42,7 +42,7 @@ export default {
       authorAvatar: 'http://pic.qqtn.com/up/2017-11/2017112315111750386.jpg',
       authorName: 'lele小仙女',
       timestamp: '二小时前',
-      location: '知春路'
+      circle: '希格玛大厦'
     },
     articleData: {
       text: '我滴妈呀，太可爱辣！海獭宝宝明日花搓脸前还拍拍小手，要大干一番的架势~~~( • ̀ω•́ )完全萌的犯规啊……~真的好奇他们这么可爱的小脑袋里在想什么',
@@ -85,7 +85,7 @@ export default {
       authorAvatar: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
       authorName: 'John Lee',
       timestamp: '一小时前',
-      location: '知春路'
+      circle: '希格玛大厦'
     },
     articleData: {
       text: '火箭少女空降希格玛！和每一位小姐姐握了手超开心了！火箭少女空降希格玛！！',

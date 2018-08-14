@@ -57,8 +57,10 @@ name | type | description | example
 authorAvatar | string | 作者头像 url | `http://...[jpg|png]`
 authorName | string | 作者名称 | `John`
 timestamp | string | 条目时间戳 | `一小时前`
-location | string | 条目地理位置 | `知春路`
+location | string (optional) | 地理位置 | `知春路`
 circle | string (optional) | 圈子名称 | `希格玛大厦`
+
+> 如果存在 `circle`，则不显示 `location`
 
 #### articleData
 
