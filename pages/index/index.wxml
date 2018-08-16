@@ -46,7 +46,7 @@
 
           <!-- 图集 -->
           <view wx:if="{{ item.articleType == 'pictures' }}" class="image-album">
-            <image wx:for="{{ item.articleData.pictures }}" wx:for-item="picture" wx:key="url" src="{{ picture.src }}" bindtap="viewBigImage" data-src="{{ picture.src }}" mode="widthFix" />
+            <image wx:for="{{ item.articleData.pictures }}" wx:for-item="picture" wx:key="url" src="{{ picture.src }}" bindtap="viewBigImage" data-src="{{ picture.src }}" mode="aspectFill" />
           </view>
 
           <!-- 视频 -->

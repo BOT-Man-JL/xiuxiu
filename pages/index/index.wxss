@@ -144,7 +144,8 @@ page {
 }
 
 .list-item .image-album image {
-  width: 30%;
+  width: 170rpx;
+  height: 170rpx;
 }
 
 .list-item .video-item video {
