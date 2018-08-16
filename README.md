@@ -60,7 +60,7 @@ timestamp | string | 条目时间戳 | `一小时前`
 location | string (optional) | 地理位置 | `知春路`
 circle | string (optional) | 圈子名称 | `希格玛大厦`
 
-> 如果存在 `circle`，则不显示 `location`
+> 如果存在 `circle`，则不显示 `location`（两者必选一个）
 
 #### articleData
 
@@ -107,6 +107,7 @@ link.abstractText | string | 外链摘要文本 | `...`
 
 ``` js
 communityData: {
+  hasFire: true,
   fireCount: 666,
   commentCount: 998
 }
@@ -114,6 +115,7 @@ communityData: {
 
 name | type | description | example
 -----|------|-------------|--------
+hasFire | boolean (optional) | 是否已加火 | `true|false`
 fireCount | number | 加火数目 | 666
 commentCount | number | 评论数目 | 998
 

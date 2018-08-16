@@ -13,7 +13,7 @@ export default {
       text: '为解决回龙观新村广大居民的公共交通出行需求，2018年8月17日首车起，北京公交集团将实施回龙观新村区域公交线网的整体优化。其中，307路、专29、963路3条线路将进驻回龙观新村。',
     },
     communityData: {
-      fireCount: 15779,
+      fireCount: 159,
       commentCount: 832
     }
   }, {
@@ -32,6 +32,7 @@ export default {
       }
     },
     communityData: {
+      hasFire: true,
       fireCount: 6666,
       commentCount: 998
     }

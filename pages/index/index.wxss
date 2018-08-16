@@ -214,6 +214,25 @@ page {
   flex: 1;
 }
 
+.list-item .share-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  color: transparent;
+  background: transparent;
+  border: none;
+  overflow: visible;
+  width: 18px;
+  height: 18px;
+}
+
+.list-item .share-button::after {
+  border: none;
+}
+
 .list-item .share-icon {
   width: 16px;
   height: 16px;
