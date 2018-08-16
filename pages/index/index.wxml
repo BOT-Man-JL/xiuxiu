@@ -1,7 +1,7 @@
 <!--index.wxml-->
 
 <view class="top-bar">
-  <view class="icon-with-text">
+  <view class="icon-with-text" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
     <image class="location-icon" src="/resources/home/location-white.png" />
     <text class="location-text">{{ locationText }}</text>
   </view>
@@ -11,7 +11,7 @@
 <view class="list-container {{ popupState ? '' : 'masking' }}">
   <view wx:for="{{ articleList }}" wx:key="id" class="list-item">
     <!--作者头像-->
-    <view class="avatar-container">
+    <view class="avatar-container" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
       <image class="avatar" mode="aspectFill" src="{{ item.metaData.authorAvatar }}" />
     </view>
 
@@ -19,10 +19,10 @@
     <view class="list-item-right">
       <!--右边的发布者信息-->
       <view class="list-item-header">
-        <text class="item-author-text">{{ item.metaData.authorName }}</text>
+        <text class="item-author-text" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">{{ item.metaData.authorName }}</text>
         <view class="list-item-detail">
           <text class="list-item-text">{{ item.metaData.timestamp }}</text>
-          <view wx:if="{{ item.metaData.circle }}" class="location-container">
+          <view wx:if="{{ item.metaData.circle }}" class="location-container" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
             <image class="location-icon" src="/resources/home/circle-blue.png" />
             <text class="list-item-text blue-text">{{ item.metaData.circle }}</text>
           </view>
@@ -53,9 +53,12 @@
           <!-- <view wx:if="{{ item.articleType == 'video' }}" class="video-item">
             <video src="{{ item.articleData.video.src }}" poster="{{ item.articleData.video.poster }}" />
           </view> -->
+          <view wx:if="{{ item.articleType == 'video' }}" class="large-image-item">
+            <image src="{{ item.articleData.video.poster }}" bindtap="promptUnsupported" data-text="由于微信限制，暂不支持视频播放功能 😔" mode="widthFix" />
+          </view>
 
           <!-- 外链 -->
-          <view wx:if="{{ item.articleType == 'link' }}" class="link-item">
+          <view wx:if="{{ item.articleType == 'link' }}" class="link-item" bindtap="promptUnsupported" data-text="由于微信限制，暂不支持打开外链功能 😔">
             <image src="{{ item.articleData.link.thumb }}" mode="widthFix" />
             <text>{{ item.articleData.link.abstractText }}</text>
           </view>
@@ -70,7 +73,7 @@
               <text class="action-text">{{ item.communityData.fireCount }}</text>
             </view>
             <!-- 评论 -->
-            <view class="icon-with-text">
+            <view class="icon-with-text" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
               <image class="action-icon" src="/resources/home/comment.png" />
               <text class="action-text">{{ item.communityData.commentCount }}</text>
             </view>
