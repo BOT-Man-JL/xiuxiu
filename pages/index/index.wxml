@@ -11,15 +11,17 @@
 <view class="list-container {{ popupState ? '' : 'masking' }}">
   <view wx:for="{{ articleList }}" wx:key="id" class="list-item">
     <!--作者头像-->
-    <view class="avatar-container" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
-      <image class="avatar" mode="aspectFill" src="{{ item.metaData.authorAvatar }}" />
+    <view class="avatar">
+      <image src="{{ item.metaData.authorAvatar }}" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃" mode="aspectFill" />
     </view>
 
     <!--右边的部分-->
     <view class="list-item-right">
       <!--右边的发布者信息-->
       <view class="list-item-header">
-        <text class="item-author-text" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">{{ item.metaData.authorName }}</text>
+        <view class="item-author-text">
+          <text bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">{{ item.metaData.authorName }}</text>
+        </view>
         <view class="list-item-detail">
           <text class="list-item-text">{{ item.metaData.timestamp }}</text>
           <view wx:if="{{ item.metaData.circle }}" class="location-container" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
