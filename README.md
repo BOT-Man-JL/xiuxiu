@@ -6,24 +6,24 @@
 
 ### Index
 
-直接修改数据文件：
-
-[resources/home/mock-data.js](resources/home/mock-data.js)
-
-#### articleList
+> 数据文件：[resources/home/mock-data.js](resources/home/mock-data.js)
 
 ``` js
-articleList: [
-  articleItem,
-  articleItem,
-  // ...
-]
+export default {
+  locationText: '希格玛大厦',
+  articleList: [ {}, {}, ... ]
+}
 ```
 
-#### articleItem
+name | type | description | example
+-----|------|-------------|--------
+locationText | string | 当前用户位置 | `希格玛大厦`
+articleList | array | 首页文章列表 |
+
+#### articleList[0]
 
 ``` js
-articleItem: {
+{
   id: '1',
   articleType: 'text',
   metaData: { },
@@ -34,11 +34,11 @@ articleItem: {
 
 name | type | description | example
 -----|------|-------------|--------
-id | string | 文章 ID | `1`
+id | string (unique) | 文章 ID | `1`
 articleType | string | 文章类型 | `[text|picture|pictures|video|link]`
-metaData | object | 元数据 | shown below
-articleData | object | 文章数据 | shown below
-communityData | object | 交互数据 | shown below
+metaData | object | 元数据 |
+articleData | object | 文章数据 |
+communityData | object | 交互数据 |
 
 #### metaData
 
@@ -95,13 +95,14 @@ text | string | 文章正文 | `...`
 picture | object | 图片数据（`articleType: 'picture'`） |
 picture.src | string | 图片 url | `http://...[jpg|png]`
 pictures | array | 图集数据（`articleType: 'pictures'`） |
-pictures.item.src | string | 图集中图片 url | `http://...[jpg|png]`
+pictures[0].src | string | 图集中图片 url | `http://...[jpg|png]`
 video | object | 视频数据（`articleType: 'video'`） |
 video.poster | string | 视频封面图片 url | `http://...[jpg|png]`
-video.src | string | 视频来源 url | `http://...`
+video.src | string | 视频来源 url（暂时无效） | `http://...`
 link | object | 外链数据（`articleType: 'link'`） |
 link.thumb | string | 外链缩略图 | `http://...[jpg|png]`
 link.abstractText | string | 外链摘要文本 | `...`
+link.targetUrl | string | 外链地址 url（暂时无效） | `http://...`
 
 #### articleData
 
