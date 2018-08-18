@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/unimplemented/unimplemented"
   ],
   "window": {
     "backgroundColor": "#f0f0f0",
@@ -26,19 +26,19 @@
       {
         "iconPath": "resources/tabbar/circle-gray.png",
         "selectedIconPath": "resources/tabbar/circle-blue.png",
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/unimplemented/unimplemented",
         "text": "圈子"
       },
       {
         "iconPath": "resources/tabbar/flavor-gray.png",
         "selectedIconPath": "resources/tabbar/flavor-blue.png",
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/unimplemented/unimplemented",
         "text": "爆料"
       },
       {
         "iconPath": "resources/tabbar/my-gray.png",
         "selectedIconPath": "resources/tabbar/my-blue.png",
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/unimplemented/unimplemented",
         "text": "我的"
       }
     ]

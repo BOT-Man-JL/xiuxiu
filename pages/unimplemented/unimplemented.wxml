@@ -1,0 +1,6 @@
+<!--unimplemented.wxml-->
+
+<view class="container">
+  <text>This is an unimplemented Page.</text>
+  <text>Redirecting back to previous tab...</text>
+</view>

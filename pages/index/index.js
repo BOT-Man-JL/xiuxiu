@@ -1,9 +1,7 @@
 //index.js
-//获取应用实例
-import config from '../../utils/config'
-import mockData from '../../resources/home/mock-data.js'
 
-const app = getApp()
+import config from '../../resources/config'
+import mockData from '../../resources/home/mock-data.js'
 
 Page({
   data: Object.assign({
@@ -11,8 +9,25 @@ Page({
     popupState: 'hide',
     bigImageSrc: ''
   }, mockData),
-  onLoad() {
-    console.log('onloaded')
+  onPullDownRefresh() {
+    const locationText = this.data.locationText
+    const articleList = this.data.articleList
+    this.setData({
+      locationText: config.loadingPrompt,
+      articleList: []
+    }, () => {
+      setTimeout(() => {
+        this.setData({
+          locationText: locationText,
+          articleList: articleList
+        })
+        wx.hideLoading()
+        wx.stopPullDownRefresh()
+      }, config.loadingTime)
+    })
+    wx.showLoading({
+      title: config.loadingPrompt
+    })
   },
   viewBigImage(e) {
     this.setData({
