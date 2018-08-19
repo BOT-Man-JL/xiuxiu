@@ -4,6 +4,19 @@
   <view class="title">
     <text>{{ pageData.followedCirclesTitle }}</text>
   </view>
+  <swiper class="circle-list" indicator-dots="true" indicator-active-color="white" indicator-color="lightgray" circular="true" autoplay="true" interval="3000">
+    <swiper-item wx:for="{{ followedCircleList }}" wx:key="id" item-id="{{ item.id }}">
+      <view class="circle-item">
+        <view class="circle-info">
+          <text class="circle-name">{{ item.name }}</text>
+          <text class="circle-detail">
+            {{ item.followCount + pageData.followText + '　' + item.updateCount + pageData.updateText }}
+          </text>
+        </view>
+        <image src="{{ item.image }}" />
+      </view>
+    </swiper-item>
+  </swiper>
 </view>
 
 <view class="finding-circles">

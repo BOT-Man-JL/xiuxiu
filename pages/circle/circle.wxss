@@ -1,9 +1,5 @@
 /**circle.wxss**/
 
-page {
-  background: #f0f0f0;
-}
-
 .title {
   font-size: 18px;
   color: #111;
@@ -13,12 +9,46 @@ page {
 
 .followed-circles {
   display: flex;
-  background: #fff;
+  flex-direction: column;
   padding: 3px;
+  margin-bottom: 20px;
+}
+
+.followed-circles .circle-list {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.followed-circles .circle-item {
+  text-align: center;
+  padding: 0 30rpx;
+}
+
+.followed-circles .circle-info {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  font-weight: lighter;
+  text-shadow: 1px 0 #666666, 0 1px #666666, 1px 0 #666666, 0 -1px #666666;
+}
+
+.followed-circles .circle-name {
+  font-size: 20px;
+}
+
+.followed-circles .circle-detail {
+  font-size: 14px;
+}
+
+.followed-circles .circle-item image {
+  border-radius: 15px;
+  width: 100%;
+  height: 150px;
 }
 
 .finding-circles {
   display: flex;
-  background: #fff;
   padding: 3px;
 }

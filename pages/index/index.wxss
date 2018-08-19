@@ -1,9 +1,5 @@
 /**index.wxss**/
 
-page {
-  background: #f0f0f0;
-}
-
 /* top bar */
 
 .top-bar {
