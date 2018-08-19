@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/circle/circle",
     "pages/unimplemented/unimplemented"
   ],
   "window": {
@@ -26,7 +27,7 @@
       {
         "iconPath": "resources/tabbar/circle-gray.png",
         "selectedIconPath": "resources/tabbar/circle-blue.png",
-        "pagePath": "pages/unimplemented/unimplemented",
+        "pagePath": "pages/circle/circle",
         "text": "圈子"
       },
       {

@@ -1,0 +1,13 @@
+<!--circle.wxml-->
+
+<view class="followed-circles">
+  <view class="title">
+    <text>{{ pageData.followedCirclesTitle }}</text>
+  </view>
+</view>
+
+<view class="finding-circles">
+  <view class="title">
+    <text>{{ pageData.findingCirclesTitle }}</text>
+  </view>
+</view>

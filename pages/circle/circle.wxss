@@ -1,0 +1,24 @@
+/**circle.wxss**/
+
+page {
+  background: #f0f0f0;
+}
+
+.title {
+  font-size: 18px;
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.followed-circles {
+  display: flex;
+  background: #fff;
+  padding: 3px;
+}
+
+.finding-circles {
+  display: flex;
+  background: #fff;
+  padding: 3px;
+}

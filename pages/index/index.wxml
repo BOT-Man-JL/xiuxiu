@@ -1,5 +1,6 @@
 <!--index.wxml-->
 
+<!--顶栏-->
 <view class="top-bar">
   <view class="icon-with-text" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
     <image class="location-icon" src="/resources/home/location-white.png" />
@@ -19,9 +20,11 @@
     <view class="list-item-right">
       <!--右边的发布者信息-->
       <view class="list-item-header">
+        <!--作者名称-->
         <view class="item-author-text">
           <text bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">{{ item.metaData.authorName }}</text>
         </view>
+        <!--时间戳 + 位置/圈子-->
         <view class="list-item-detail">
           <text class="list-item-text">{{ item.metaData.timestamp }}</text>
           <view wx:if="{{ item.metaData.circle }}" class="location-container" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
@@ -92,6 +95,7 @@
   </view>
 </view>
 
+<!--图片弹框-->
 <view class="popup {{ popupState }}" bindtap="hidePopup">
   <view></view>
   <image wx:if="{{ bigImageSrc }}" src="{{ bigImageSrc }}" mode="widthFix" />
