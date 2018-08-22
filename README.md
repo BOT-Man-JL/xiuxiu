@@ -35,7 +35,7 @@ articleList | array | 首页文章列表 |
 name | type | description | example
 -----|------|-------------|--------
 id | string (unique) | 文章 ID | `1`
-articleType | string | 文章类型 | `[text|picture|pictures|video|link]`
+articleType | string | 文章类型 | `[text/picture/pictures/video/link]`
 metaData | object | 元数据 |
 articleData | object | 文章数据 |
 communityData | object | 交互数据 |
@@ -54,7 +54,7 @@ metaData: {
 
 name | type | description | example
 -----|------|-------------|--------
-authorAvatar | string | 作者头像 url | `http://...[jpg|png]`
+authorAvatar | string | 作者头像 url | `http://...[jpg/png]`
 authorName | string | 作者名称 | `John`
 timestamp | string | 条目时间戳 | `一小时前`
 location | string (optional) | 地理位置 | `知春路`
@@ -93,14 +93,14 @@ name | type | description | example
 -----|------|-------------|--------
 text | string | 文章正文 | `...`
 picture | object | 图片数据（`articleType: 'picture'`） |
-picture.src | string | 图片 url | `http://...[jpg|png]`
+picture.src | string | 图片 url | `http://...[jpg/png]`
 pictures | array | 图集数据（`articleType: 'pictures'`） |
-pictures[0].src | string | 图集中图片 url | `http://...[jpg|png]`
+pictures[0].src | string | 图集中图片 url | `http://...[jpg/png]`
 video | object | 视频数据（`articleType: 'video'`） |
-video.poster | string | 视频封面图片 url | `http://...[jpg|png]`
+video.poster | string | 视频封面图片 url | `http://...[jpg/png]`
 video.src | string | 视频来源 url（暂时无效） | `http://...`
 link | object | 外链数据（`articleType: 'link'`） |
-link.thumb | string | 外链缩略图 | `http://...[jpg|png]`
+link.thumb | string | 外链缩略图 | `http://...[jpg/png]`
 link.abstractText | string | 外链摘要文本 | `...`
 link.targetUrl | string | 外链地址 url（暂时无效） | `http://...`
 
@@ -116,7 +116,7 @@ communityData: {
 
 name | type | description | example
 -----|------|-------------|--------
-hasFire | boolean (optional) | 是否已加火 | `true|false`
+hasFire | boolean (optional) | 是否已加火 | `true/false`
 fireCount | number | 加火数目 | 666
 commentCount | number | 评论数目 | 998
 
