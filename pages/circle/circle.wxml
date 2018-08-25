@@ -32,7 +32,7 @@
     <view class="finding-item-container">
       <view class="start-layout">
         <view class="center-layout">
-          <image class="finding-image" src="{{ item.image }}" />
+          <image class="finding-image" src="https://pic2.zhimg.com/ec1564be4_l.jpg" />
         </view>
         <view class="finding-detail">
           <text name="text-name">五道口</text>
