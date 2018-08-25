@@ -6,7 +6,7 @@
   </view>
   <view class="thin-divider" />
   <swiper class="circle-list" indicator-dots="true" indicator-active-color="white" indicator-color="lightgray" circular="true" autoplay="true" interval="3000">
-    <swiper-item wx:for="{{ followedCircleList }}" wx:key="id" item-id="{{ item.id }}">
+    <swiper-item wx:for="{{ followedCircleList }}" wx:key="id" item-id="{{ item.id }}" bindtap="jumpToBasePage">
       <view class="circle-item">
         <view class="circle-info">
           <text class="circle-name">{{ item.name }}</text>
@@ -28,75 +28,7 @@
 </view>
 <view class="thin-divider" />
 <scroll-view scroll-y="true">
-  <view class="finding-item" wx:for="{{ followedCircleList }}">
-    <view class="finding-item-container">
-      <view class="start-layout">
-        <view class="center-layout">
-          <image class="finding-image" src="{{ item.image }}" />
-        </view>
-        <view class="finding-detail">
-          <text name="text-name">五道口</text>
-          <text name="text-distance">2.3km</text>
-          <text name="text-detail">8.2万关注   887新鲜事</text>
-        </view>
-      </view>
-      <view class="center-layout">
-        <image class="finding-like-image" src="https://pic2.zhimg.com/ec1564be4_l.jpg" />
-      </view>
-    </view>
-  </view>
-  <view class="finding-item" wx:for="{{ followedCircleList }}">
-    <view class="finding-item-container">
-      <view class="start-layout">
-        <view class="center-layout">
-          <image class="finding-image" src="{{ item.image }}" />
-        </view>
-        <view class="finding-detail">
-          <text name="text-name">五道口</text>
-          <text name="text-distance">2.3km</text>
-          <text name="text-detail">8.2万关注   887新鲜事</text>
-        </view>
-      </view>
-      <view class="center-layout">
-        <image class="finding-like-image" src="https://pic2.zhimg.com/ec1564be4_l.jpg" />
-      </view>
-    </view>
-  </view>
-  <view class="finding-item" wx:for="{{ followedCircleList }}">
-    <view class="finding-item-container">
-      <view class="start-layout">
-        <view class="center-layout">
-          <image class="finding-image" src="{{ item.image }}" />
-        </view>
-        <view class="finding-detail">
-          <text name="text-name">五道口</text>
-          <text name="text-distance">2.3km</text>
-          <text name="text-detail">8.2万关注   887新鲜事</text>
-        </view>
-      </view>
-      <view class="center-layout">
-        <image class="finding-like-image" src="https://pic2.zhimg.com/ec1564be4_l.jpg" />
-      </view>
-    </view>
-  </view>
-  <view class="finding-item" wx:for="{{ followedCircleList }}">
-    <view class="finding-item-container">
-      <view class="start-layout">
-        <view class="center-layout">
-          <image class="finding-image" src="{{ item.image }}" />
-        </view>
-        <view class="finding-detail">
-          <text name="text-name">五道口</text>
-          <text name="text-distance">2.3km</text>
-          <text name="text-detail">8.2万关注   887新鲜事</text>
-        </view>
-      </view>
-      <view class="center-layout">
-        <image class="finding-like-image" src="https://pic2.zhimg.com/ec1564be4_l.jpg" />
-      </view>
-    </view>
-  </view>
-  <view class="finding-item" wx:for="{{ followedCircleList }}">
+  <view class="finding-item" wx:for="{{ followedCircleList }} " bindtap="jumpToBasePage">
     <view class="finding-item-container">
       <view class="start-layout">
         <view class="center-layout">

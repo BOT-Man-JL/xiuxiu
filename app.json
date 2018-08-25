@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/circle/circle",
+    "pages/circle-base/circle-base",
     "pages/unimplemented/unimplemented"
   ],
   "window": {

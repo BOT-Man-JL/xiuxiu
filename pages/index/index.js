@@ -9,6 +9,7 @@ Page({
     popupState: 'hide',
     bigImageSrc: ''
   }, mockData),
+
   onPullDownRefresh() {
     const locationText = this.data.locationText
     const articleList = this.data.articleList
@@ -29,12 +30,14 @@ Page({
       title: config.loadingPrompt
     })
   },
+
   viewBigImage(e) {
     this.setData({
       bigImageSrc: e.currentTarget.dataset.src,
       popupState: ''
     })
   },
+
   hidePopup(e) {
     if (this.data.popupState)
       return
@@ -53,6 +56,7 @@ Page({
       })
     }, 500)
   },
+
   promptUnsupported(e) {
     wx.showModal({
       title: config.appName,
@@ -60,6 +64,7 @@ Page({
       showCancel: false
     })
   },
+
   triggerFire(e) {
     const articleList = this.data.articleList
     const index = this.findIndexById(e.currentTarget.dataset.id)
@@ -78,6 +83,7 @@ Page({
       })
     }
   },
+
   onShareAppMessage(e) {
     let title = config.appName
     if (e.target) {
@@ -93,6 +99,7 @@ Page({
       path: '/page/index'
     }
   },
+  
   findIndexById(id) {
     const articleList = this.data.articleList
     for (let i in articleList) {
