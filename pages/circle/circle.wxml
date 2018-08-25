@@ -4,6 +4,7 @@
   <view class="title">
     <text>{{ pageData.followedCirclesTitle }}</text>
   </view>
+  <view class="thin-divider" />
   <swiper class="circle-list" indicator-dots="true" indicator-active-color="white" indicator-color="lightgray" circular="true" autoplay="true" interval="3000">
     <swiper-item wx:for="{{ followedCircleList }}" wx:key="id" item-id="{{ item.id }}">
       <view class="circle-item">
@@ -18,9 +19,98 @@
     </swiper-item>
   </swiper>
 </view>
-
+<view class="large-divider" />
 <view class="finding-circles">
   <view class="title">
     <text>{{ pageData.findingCirclesTitle }}</text>
   </view>
+  <image class="search" src="https://pic2.zhimg.com/ec1564be4_l.jpg" />
 </view>
+<view class="thin-divider" />
+<scroll-view scroll-y="true">
+  <view class="finding-item" wx:for="{{ followedCircleList }}">
+    <view class="finding-item-container">
+      <view class="start-layout">
+        <view class="center-layout">
+          <image class="finding-image" src="{{ item.image }}" />
+        </view>
+        <view class="finding-detail">
+          <text name="text-name">五道口</text>
+          <text name="text-distance">2.3km</text>
+          <text name="text-detail">8.2万关注   887新鲜事</text>
+        </view>
+      </view>
+      <view class="center-layout">
+        <image class="finding-like-image" src="https://pic2.zhimg.com/ec1564be4_l.jpg" />
+      </view>
+    </view>
+  </view>
+  <view class="finding-item" wx:for="{{ followedCircleList }}">
+    <view class="finding-item-container">
+      <view class="start-layout">
+        <view class="center-layout">
+          <image class="finding-image" src="{{ item.image }}" />
+        </view>
+        <view class="finding-detail">
+          <text name="text-name">五道口</text>
+          <text name="text-distance">2.3km</text>
+          <text name="text-detail">8.2万关注   887新鲜事</text>
+        </view>
+      </view>
+      <view class="center-layout">
+        <image class="finding-like-image" src="https://pic2.zhimg.com/ec1564be4_l.jpg" />
+      </view>
+    </view>
+  </view>
+  <view class="finding-item" wx:for="{{ followedCircleList }}">
+    <view class="finding-item-container">
+      <view class="start-layout">
+        <view class="center-layout">
+          <image class="finding-image" src="{{ item.image }}" />
+        </view>
+        <view class="finding-detail">
+          <text name="text-name">五道口</text>
+          <text name="text-distance">2.3km</text>
+          <text name="text-detail">8.2万关注   887新鲜事</text>
+        </view>
+      </view>
+      <view class="center-layout">
+        <image class="finding-like-image" src="https://pic2.zhimg.com/ec1564be4_l.jpg" />
+      </view>
+    </view>
+  </view>
+  <view class="finding-item" wx:for="{{ followedCircleList }}">
+    <view class="finding-item-container">
+      <view class="start-layout">
+        <view class="center-layout">
+          <image class="finding-image" src="{{ item.image }}" />
+        </view>
+        <view class="finding-detail">
+          <text name="text-name">五道口</text>
+          <text name="text-distance">2.3km</text>
+          <text name="text-detail">8.2万关注   887新鲜事</text>
+        </view>
+      </view>
+      <view class="center-layout">
+        <image class="finding-like-image" src="https://pic2.zhimg.com/ec1564be4_l.jpg" />
+      </view>
+    </view>
+  </view>
+  <view class="finding-item" wx:for="{{ followedCircleList }}">
+    <view class="finding-item-container">
+      <view class="start-layout">
+        <view class="center-layout">
+          <image class="finding-image" src="{{ item.image }}" />
+        </view>
+        <view class="finding-detail">
+          <text name="text-name">五道口</text>
+          <text name="text-distance">2.3km</text>
+          <text name="text-detail">8.2万关注   887新鲜事</text>
+        </view>
+      </view>
+      <view class="center-layout">
+        <image class="finding-like-image" src="https://pic2.zhimg.com/ec1564be4_l.jpg" />
+      </view>
+    </view>
+  </view>
+</scroll-view>
