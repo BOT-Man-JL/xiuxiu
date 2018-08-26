@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/circle/circle",
     "pages/index/index",
-    "pages/circle-detail/circle-detail",
-    "pages/unimplemented/unimplemented",
-    "pages/my/my"
+    "pages/circle/circle",
+    "pages/flavor/flavor",
+    "pages/my/my",
+    "pages/circle-detail/circle-detail"
   ],
   "window": {
     "backgroundColor": "#f0f0f0",
@@ -35,8 +35,8 @@
       {
         "iconPath": "resources/tabbar/flavor-gray.png",
         "selectedIconPath": "resources/tabbar/flavor-blue.png",
-        "pagePath": "pages/unimplemented/unimplemented",
-        "text": "爆料"
+        "pagePath": "pages/flavor/flavor",
+        "text": "加料"
       },
       {
         "iconPath": "resources/tabbar/my-gray.png",

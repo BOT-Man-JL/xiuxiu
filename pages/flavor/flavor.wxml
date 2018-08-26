@@ -1,0 +1,8 @@
+<!--flavor.wxml-->
+<view class="top-bar">
+  <image src="/resources/fake/flavor.png" style="width: 750rpx" mode="widthFix" />
+</view>
+
+<view class="article-list">
+  <article-list article-list="{{ articleList }}" />
+</view>
