@@ -10,6 +10,13 @@ Page({
     bigImageSrc: ''
   }, mockData),
 
+  navigateToDetailPage(e) {
+    const id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: '../circle-detail/circle-detail?id=' + id
+    })
+  },
+
   onPullDownRefresh() {
     const locationText = this.data.locationText
     const articleList = this.data.articleList

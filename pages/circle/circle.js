@@ -12,11 +12,10 @@ Page({
     this._updateFollowed()
   },
 
-  jumpToBasePage(e) {
+  navigateToDetailPage(e) {
     const id = e.currentTarget.dataset.id
-    console.log(id)
     wx.navigateTo({
-      url: '../circle-base/circle-base?id=' + id
+      url: '../circle-detail/circle-detail?id=' + id
     })
   },
 

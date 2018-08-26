@@ -6,7 +6,7 @@
   </view>
   <view class="thin-splitter" />
   <swiper class="circle-list" indicator-dots="true" indicator-active-color="white" indicator-color="lightgray" circular="true" autoplay="true" interval="3000">
-    <swiper-item wx:for="{{ circleList }}" wx:key="id" item-id="{{ item.id }}" wx:if="{{ item.hasLike }}" bindtap="jumpToBasePage" data-id="{{ item.id }}">
+    <swiper-item wx:for="{{ circleList }}" wx:key="id" item-id="{{ item.id }}" wx:if="{{ item.hasLike }}" bindtap="navigateToDetailPage" data-id="{{ item.id }}">
       <view class="circle-item">
         <view class="circle-info">
           <text class="circle-name">{{ item.name }}</text>
@@ -29,7 +29,7 @@
   </view>
   <view class="thin-splitter" />
   <view class="circle-list">
-    <view class="circle-item" wx:for="{{ circleList }}" wx:key="id" bindtap="jumpToBasePage" data-id="{{ item.id }}">
+    <view class="circle-item" wx:for="{{ circleList }}" wx:key="id" bindtap="navigateToDetailPage" data-id="{{ item.id }}">
       <view class="center-layout">
         <view class="center-layout">
           <image class="circle-image" src="{{ item.image }}" />

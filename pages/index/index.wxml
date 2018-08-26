@@ -27,7 +27,7 @@
         <!--时间戳 + 位置/圈子-->
         <view class="list-item-detail">
           <text class="list-item-text">{{ item.metaData.timestamp }}</text>
-          <view wx:if="{{ item.metaData.circle }}" class="location-container" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
+          <view wx:if="{{ item.metaData.circle }}" class="location-container" bindtap="navigateToDetailPage" data-id="{{ item.metaData.circleId }}">
             <image class="location-icon" src="/resources/home/circle-blue.png" />
             <text class="list-item-text blue-text">{{ item.metaData.circle }}</text>
           </view>
