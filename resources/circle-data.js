@@ -12,23 +12,44 @@ export default {
     iconImage: 'https://s1.ax1x.com/2018/08/13/PgrjeO.jpg',
     followCount: '14万',
     updateCount: '18',
-    distance: '2.1km',
-    hasLike: true
+    distance: '2.1km',/Users/melodybai/Desktop/xiuxiu/README.md
+    hasLike: true,
+    location: '北京市海淀区知春路49号'
   }, {
     id: '2',
-    name: '六道口',
-    bannerImage: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
-    iconImage: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
-    followCount: '228',
-    updateCount: '13',
-    distance: '3.2km'
+    name: '五道口',
+    bannerImage: 'https://s1.ax1x.com/2018/08/26/PbL4IJ.jpg',
+    iconImage: 'https://s1.ax1x.com/2018/08/26/PbLha4.jpg',
+    followCount: '8.2万',
+    updateCount: '8872',
+    distance: '2.3km',
+    location: '北京市海淀区五道口'
   }, {
     id: '3',
-    name: '六道口',
-    bannerImage: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
-    iconImage: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
-    followCount: '228',
-    updateCount: '13',
-    distance: '3.2km'
+    name: '融泽嘉园',
+    bannerImage: 'https://s1.ax1x.com/2018/08/26/PbLoGR.jpg',
+    iconImage: 'https://s1.ax1x.com/2018/08/26/PbLfZF.jpg',
+    followCount: '298',
+    updateCount: '76',
+    distance: '12.1km',
+    location: '北京市海淀区龙域东一路融泽嘉园'
+  }, {
+    id: '4',
+    name: '清华大学',
+    bannerImage: 'https://s1.ax1x.com/2018/08/26/PbLoGR.jpg',
+    iconImage: 'https://s1.ax1x.com/2018/08/26/PbLfZF.jpg',
+    followCount: '12.6万',
+    updateCount: '1.2万',
+    distance: '2.4km',
+    location: '北京市海淀区双青路30号'
+  }, {
+    id: '5',
+    name: '故宫博物馆',
+    bannerImage: 'https://s1.ax1x.com/2018/08/26/PbLRqU.jpg',
+    iconImage: 'https://s1.ax1x.com/2018/08/26/PbL2rT.jpg',
+    followCount: '10万',
+    updateCount: '9875',
+    distance: '10.6km',
+    location: '北京市东城区景山前街4号'
   }]
 }
