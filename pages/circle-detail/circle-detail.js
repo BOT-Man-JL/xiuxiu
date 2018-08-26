@@ -1,4 +1,4 @@
-//circle-base
+//circle-detail.js
 
 import config from '../../resources/config'
 import mockData from '../../resources/home/mock-data.js'

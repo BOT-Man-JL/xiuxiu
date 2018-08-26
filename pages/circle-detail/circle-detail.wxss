@@ -1,4 +1,4 @@
-/* pages/circle-base/circle-base.wxss */
+/* circle-detail.wxss */
 .center-layout{
   display: flex;
   flex-direction: row;

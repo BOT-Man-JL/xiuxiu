@@ -15,7 +15,7 @@ Page({
   navigateToDetailPage(e) {
     const id = e.currentTarget.dataset.id
     wx.navigateTo({
-      url: '../circle-detail/circle-detail?id=' + id
+      url: '/pages/circle-detail/circle-detail?id=' + id
     })
   },
 

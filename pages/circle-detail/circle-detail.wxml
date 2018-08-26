@@ -1,4 +1,4 @@
-<!--circle-base-->
+<!--circle-detail.wxml-->
 <view class="circle-main-thum">
   <image class="circle-main-thum" mode="aspectFill" src="http://ixdc.org/wp-content/uploads/2014/06/14021367174351.jpg"></image>
   <view class="circle-name-container">

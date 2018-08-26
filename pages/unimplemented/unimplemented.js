@@ -14,7 +14,7 @@ Page({
       showCancel: false,
       success: () => {
         wx.switchTab({
-          url: '../index/index'
+          url: '/pages/index/index'
         })
       }
     })
