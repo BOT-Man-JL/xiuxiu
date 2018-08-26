@@ -37,7 +37,7 @@
         <view class="circle-text">
           <text class="circle-name">{{ item.name }}</text>
           <text class="circle-detail">{{ item.distance }}</text>
-          <text class="circle-detail">{{ item.followCount + pageData.followText + '　' + item.updateCount + pageData.newsText }}</text>
+          <text class="circle-detail">{{ item.followCount + pageData.followText + '　' + item.newsCount + pageData.newsText }}</text>
         </view>
       </view>
       <view class="center-layout">

@@ -8,4 +8,6 @@
   </view>
 </view>
 
-<article-list article-list="{{ articleList }}" />
+<view class="article-list">
+  <article-list article-list="{{ articleList }}" />
+</view>

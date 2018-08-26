@@ -1,114 +1,25 @@
 <!--circle-detail.wxml-->
-<view class="circle-main-thum">
-  <image class="circle-main-thum" mode="aspectFill" src="http://ixdc.org/wp-content/uploads/2014/06/14021367174351.jpg"></image>
-  <view class="circle-name-container">
-    <text class="circle-name">西格玛大厦</text>
-    <view class="center-layout">
-      <image class="circle-name-favor" src="http://www.shejiye.com/uploadfile/icon/2017/0202/shejiyeiconfi01ms5pusz.png"></image>
+
+<view class="circle-info">
+  <image class="circle-banner" mode="aspectFill" src="{{ currentCircle.bannerImage }}"></image>
+  <text class="circle-name">{{ currentCircle.name }}</text>
+  <text class="circle-location">{{ currentCircle.location }}</text>
+  <text class="circle-detail">{{ currentCircle.followCount + pageData.followText + '　' + currentCircle.updateCount + pageData.updateText }}</text>
+</view>
+
+<view class="body">
+  <view class="tabs">
+    <view class="tab {{ selectedTab == 'selected' ? 'selected' : '' }}" bindtap="selectTab" data-tab="selected">
+      <text>{{ pageData.selectedTabTitle }}</text>
+    </view>
+    <view class="tab {{ selectedTab == 'square' ? 'selected' : '' }}" bindtap="selectTab" data-tab="square">
+      <text>{{ pageData.squareTabTitle }}</text>
     </view>
   </view>
-  <text class="circle-info">1.4万关注     1789新鲜事</text>
-
-  <view class="body">
-    <view class="nav bc_white">
-      <view class="{{selected?'red':'default'}}" bindtap="selected">精选</view>
-      <view class="{{selected1?'red':'default'}}" bindtap="selected1">广场</view>
-    </view>
-    <view class="{{selected?'show':'hidden'}}">
-      <view class="list-container {{ popupState ? '' : 'masking' }}">
-        <view wx:for="{{ articleList }}" wx:key="id" class="list-item">
-          <!--作者头像-->
-          <view class="avatar">
-            <image src="{{ item.metaData.authorAvatar }}" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃" mode="aspectFill" />
-          </view>
-
-          <!--右边的部分-->
-          <view class="list-item-right">
-            <!--右边的发布者信息-->
-            <view class="list-item-header">
-              <!--作者名称-->
-              <view class="item-author-text">
-                <text bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">{{ item.metaData.authorName }}</text>
-              </view>
-              <!--时间戳 + 位置/圈子-->
-              <view class="list-item-detail">
-                <text class="list-item-text">{{ item.metaData.timestamp }}</text>
-                <view wx:if="{{ item.metaData.circle }}" class="location-container" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
-                  <image class="location-icon" src="/resources/home/circle-blue.png" />
-                  <text class="list-item-text blue-text">{{ item.metaData.circle }}</text>
-                </view>
-                <view wx:else class="location-container">
-                  <image class="location-icon" src="/resources/home/location-gray.png" />
-                  <text class="list-item-text">{{ item.metaData.location }}</text>
-                </view>
-              </view>
-
-              <!--右边发布的内容-->
-              <view class="list-item-data-container">
-                <!-- 文本 -->
-                <view wx:if="{{ item.articleData.text }}" class="list-item-main-text">
-                  <text>{{ item.articleData.text }}</text>
-                </view>
-
-                <!-- 图片 -->
-                <view wx:if="{{ item.articleType == 'picture' }}" class="large-image-item">
-                  <image src="{{ item.articleData.picture.src }}" bindtap="viewBigImage" data-src="{{ item.articleData.picture.src }}" mode="widthFix" />
-                </view>
-
-                <!-- 图集 -->
-                <view wx:if="{{ item.articleType == 'pictures' }}" class="image-album">
-                  <image wx:for="{{ item.articleData.pictures }}" wx:for-item="picture" wx:key="url" src="{{ picture.src }}" bindtap="viewBigImage" data-src="{{ picture.src }}" mode="aspectFill" />
-                </view>
-
-                <!-- 视频 -->
-                <!-- <view wx:if="{{ item.articleType == 'video' }}" class="video-item">
-            <video src="{{ item.articleData.video.src }}" poster="{{ item.articleData.video.poster }}" />
-          </view> -->
-                <view wx:if="{{ item.articleType == 'video' }}" class="large-image-item">
-                  <image src="{{ item.articleData.video.poster }}" bindtap="promptUnsupported" data-text="由于微信限制，暂不支持视频播放功能 😔" mode="widthFix" />
-                </view>
-
-                <!-- 外链 -->
-                <view wx:if="{{ item.articleType == 'link' }}" class="link-item" bindtap="promptUnsupported" data-text="由于微信限制，暂不支持打开外链功能 😔">
-                  <image src="{{ item.articleData.link.thumb }}" mode="widthFix" />
-                  <text>{{ item.articleData.link.abstractText }}</text>
-                </view>
-              </view>
-
-              <!-- 底部的按钮 -->
-              <view class="item-action">
-                <view class="item-action-left">
-                  <!-- 加火 -->
-                  <view class="icon-with-text" bindtap="triggerFire" data-id="{{ item.id }}">
-                    <image class="action-icon" src="{{ '/resources/home/fire-' + (item.communityData.hasFire ? 'red' : 'gray') + '.png' }}" />
-                    <text class="action-text">{{ item.communityData.fireCount }}</text>
-                  </view>
-                  <!-- 评论 -->
-                  <view class="icon-with-text" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
-                    <image class="action-icon" src="/resources/home/comment.png" />
-                    <text class="action-text">{{ item.communityData.commentCount }}</text>
-                  </view>
-                </view>
-                <!-- 分享 -->
-                <view class=".item-action-right">
-                  <button class="share-button" open-type="share" data-id="{{ item.id }}">
-                    <image class="share-icon" src="/resources/home/share.png" />
-                  </button>
-                </view>
-              </view>
-            </view>
-          </view>
-        </view>
-      </view>
-
-      <!--图片弹框-->
-      <view class="popup {{ popupState }}" bindtap="hidePopup">
-        <view></view>
-        <image wx:if="{{ bigImageSrc }}" src="{{ bigImageSrc }}" mode="widthFix" />
-        <view></view>
-      </view>
-    </view>
-    <view class="{{selected1?'show':'hidden'}}">尚在开发中</view>
-
+  <view class="tabContent {{ selectedTab == 'selected' ? '' : 'hidden' }}">
+    <article-list article-list="{{ currentCircle.selectedArticles }}" />
+  </view>
+  <view class="tabContent {{ selectedTab == 'square' ? '' : 'hidden' }}">
+    <article-list article-list="{{ currentCircle.squareArticles }}" />
   </view>
 </view>

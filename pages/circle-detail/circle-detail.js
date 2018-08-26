@@ -1,36 +1,39 @@
 //circle-detail.js
 
 import config from '../../resources/config'
-import mockData from '../../resources/article-data'
+import mockData from '../../resources/circle-data'
 
 Page({
   data: Object.assign({
-    selected: true,
-    selected1: false
+    selectedTab: 'selected',
+    currentCircle: {}
   }, mockData),
 
   onLoad: function(options) {
-    console.log(options.id)
-  },
+    const index = this._findIndexById(options.id)
+    if (index == -1)
+      return
 
-  selected: function(e) {
     this.setData({
-      selected1: false,
-      selected: true
+      currentCircle: this.data.circleList[index]
     })
   },
 
-  selected1: function(e) {
+  selectTab: function(e) {
     this.setData({
-      selected: false,
-      selected1: true
+      selectedTab: e.currentTarget.dataset.tab
     })
   },
 
-  viewBigImage(e) {
-    this.setData({
-      bigImageSrc: e.currentTarget.dataset.src,
-      popupState: ''
-    })
+  _findIndexById(id) {
+    const circleList = this.data.circleList
+    for (let i in circleList) {
+      if (circleList[i].id == id) {
+        return i
+      }
+    }
+
+    console.error('error: Unable to find target item')
+    return -1
   }
 })

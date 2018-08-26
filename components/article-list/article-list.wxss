@@ -3,7 +3,6 @@
 /* list */
 
 .list-container {
-  margin-top: 40px;
   width: 100%;
   transition: opacity 0.5s;
 }
