@@ -1,0 +1,236 @@
+/* article-list.wxss */
+
+/* list */
+
+.list-container {
+  margin-top: 40px;
+  width: 100%;
+  transition: opacity 0.5s;
+}
+
+.list-container.masking {
+  opacity: 0.3;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+  margin: 3%;
+  padding: 3%;
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* left panel */
+
+.avatar image {
+  width: 40px;
+  height: 40px;
+  border-radius: 200px;
+}
+
+/* right panel */
+
+.list-item .list-item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 0 3%;
+}
+
+/* right panel: header */
+
+.list-item .list-item-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list-item .item-author-text {
+  font-size: 16px;
+  color: #111;
+  margin-bottom: 3px;
+}
+
+.list-item .list-item-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+
+.list-item .list-item-text {
+  font-size: 13px;
+  color: #9c9c9c;
+}
+
+.list-item .location-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.list-item .location-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+}
+
+.list-item .list-item-text.blue-text {
+  color: #366cb3;
+}
+
+/* right panel: article data */
+
+.list-item-data-container {
+  width: 100%;
+}
+
+.list-item .list-item-main-text {
+  font-size: 16px;
+  text-align: justify;
+  margin: 5px 0;
+}
+
+.list-item .large-image-item image {
+  width: 100%;
+}
+
+.list-item .image-album {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list-item .image-album image {
+  width: 170rpx;
+  height: 170rpx;
+}
+
+.list-item .video-item video {
+  width: 100%;
+}
+
+.list-item .link-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.list-item .link-item image {
+  margin-right: 6px;
+  border-radius: 3px;
+  width: 60px;
+  height: 60px;
+}
+
+.list-item .link-item text {
+  font-size: 14px;
+  color: #9c9c9c;
+  text-align: justify;
+  flex: 1;
+}
+
+/* right panel: action bar */
+
+.list-item .item-action {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+}
+
+.list-item .item-action-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.list-item .icon-with-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.list-item .action-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.list-item .action-text {
+  font-size: 13px;
+  color: #9c9c9c;
+  margin-left: 3px;
+}
+
+.list-item .item-action-right {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 1;
+}
+
+.list-item .share-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  color: transparent;
+  background: transparent;
+  border: none;
+  overflow: visible;
+  width: 18px;
+  height: 18px;
+}
+
+.list-item .share-button::after {
+  border: none;
+}
+
+.list-item .share-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* item content */
+
+.popup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 330rpx;
+  width: 750rpx;
+  z-index: 9999;
+  transition: opacity 0.5s;
+}
+
+.popup.fade {
+  opacity: 0;
+}
+
+.popup.hide {
+  display: none;
+}
+
+.popup image {
+  flex: 10;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.16), 5px 5px 15px 0px rgba(0, 0, 0, 0.12);
+  transition: opacity 0.3s;
+}
+
+.popup.fade image {
+  opacity: 0;
+}
+
+.popup view {
+  flex: 1;
+}

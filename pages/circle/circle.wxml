@@ -14,7 +14,7 @@
             {{ item.followCount + pageData.followText + '　' + item.updateCount + pageData.updateText }}
           </text>
         </view>
-        <image src="{{ item.image }}" />
+        <image src="{{ item.bannerImage }}" />
       </view>
     </swiper-item>
   </swiper>
@@ -32,7 +32,7 @@
     <view class="circle-item" wx:for="{{ circleList }}" wx:key="id" bindtap="navigateToDetailPage" data-id="{{ item.id }}">
       <view class="center-layout">
         <view class="center-layout">
-          <image class="circle-image" src="{{ item.image }}" />
+          <image class="circle-image" src="{{ item.iconImage }}" />
         </view>
         <view class="circle-text">
           <text class="circle-name">{{ item.name }}</text>

@@ -8,7 +8,8 @@ export default {
   circleList: [{
     id: '1',
     name: '希格玛大厦',
-    image: 'https://s1.ax1x.com/2018/08/13/PgrjeO.jpg',
+    bannerImage: 'https://s1.ax1x.com/2018/08/13/PgrjeO.jpg',
+    iconImage: 'https://s1.ax1x.com/2018/08/13/PgrjeO.jpg',
     followCount: '14万',
     updateCount: '18',
     distance: '2.1km',
@@ -16,14 +17,16 @@ export default {
   }, {
     id: '2',
     name: '六道口',
-    image: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
+    bannerImage: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
+    iconImage: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
     followCount: '228',
     updateCount: '13',
     distance: '3.2km'
   }, {
     id: '3',
     name: '六道口',
-    image: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
+    bannerImage: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
+    iconImage: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
     followCount: '228',
     updateCount: '13',
     distance: '3.2km'
