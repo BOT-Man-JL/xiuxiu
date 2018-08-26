@@ -3,18 +3,21 @@ export default {
     followedCirclesTitle: '我关注的',
     findingCirclesTitle: '发现圈子',
     followText: '关注',
-    updateText: '更新'
+    updateText: '更新',
+    newsText: '新鲜事',
+    selectedTabTitle: '精选',
+    squareTabTitle: '广场'
   },
   circleList: [{
     id: '1',
     name: '希格玛大厦',
-    bannerImage: 'https://s1.ax1x.com/2018/08/13/PgrjeO.jpg',
-    iconImage: 'https://s1.ax1x.com/2018/08/13/PgrjeO.jpg',
+    bannerImage: 'https://s1.ax1x.com/2018/08/26/PbxaND.jpg',
+    iconImage: 'https://s1.ax1x.com/2018/08/26/PbxtHK.jpg',
     followCount: '14万',
     updateCount: '18',
-    distance: '2.1km',/Users/melodybai/Desktop/xiuxiu/README.md
-    hasLike: true,
-    location: '北京市海淀区知春路49号'
+    distance: '2.1km',
+    location: '北京市海淀区知春路49号',
+    hasLike: true
   }, {
     id: '2',
     name: '五道口',
@@ -23,7 +26,8 @@ export default {
     followCount: '8.2万',
     updateCount: '8872',
     distance: '2.3km',
-    location: '北京市海淀区五道口'
+    location: '北京市海淀区五道口',
+    hasLike: true
   }, {
     id: '3',
     name: '融泽嘉园',
@@ -32,12 +36,13 @@ export default {
     followCount: '298',
     updateCount: '76',
     distance: '12.1km',
-    location: '北京市海淀区龙域东一路融泽嘉园'
+    location: '北京市海淀区龙域东一路融泽嘉园',
+    hasLike: true
   }, {
     id: '4',
     name: '清华大学',
-    bannerImage: 'https://s1.ax1x.com/2018/08/26/PbLoGR.jpg',
-    iconImage: 'https://s1.ax1x.com/2018/08/26/PbLfZF.jpg',
+    bannerImage: 'https://s1.ax1x.com/2018/08/26/PbLgMV.jpg',
+    iconImage: 'https://s1.ax1x.com/2018/08/26/PbLIi9.jpg',
     followCount: '12.6万',
     updateCount: '1.2万',
     distance: '2.4km',

@@ -1,0 +1,5 @@
+/* my.wxss */
+
+page {
+  background: #f0f0f0;
+}

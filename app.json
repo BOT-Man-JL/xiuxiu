@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/circle/circle",
+    "pages/index/index",
     "pages/circle-detail/circle-detail",
-    "pages/unimplemented/unimplemented"
+    "pages/unimplemented/unimplemented",
+    "pages/my/my"
   ],
   "window": {
     "backgroundColor": "#f0f0f0",
@@ -40,7 +41,7 @@
       {
         "iconPath": "resources/tabbar/my-gray.png",
         "selectedIconPath": "resources/tabbar/my-blue.png",
-        "pagePath": "pages/unimplemented/unimplemented",
+        "pagePath": "pages/my/my",
         "text": "我的"
       }
     ]
