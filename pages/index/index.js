@@ -65,9 +65,9 @@ Page({
     })
   },
 
-  triggerFire(e) {
+  toggleFire(e) {
     const articleList = this.data.articleList
-    const index = this.findIndexById(e.currentTarget.dataset.id)
+    const index = this._findIndexById(e.currentTarget.dataset.id)
     if (index == -1)
       return
 
@@ -88,7 +88,7 @@ Page({
     let title = config.appName
     if (e.target) {
       const articleList = this.data.articleList
-      const index = this.findIndexById(e.target.dataset.id)
+      const index = this._findIndexById(e.target.dataset.id)
       if (index != -1 && articleList[index].articleData.text) {
         title = articleList[index].articleData.text.substr(0, 32) + '...'
       }
@@ -99,8 +99,8 @@ Page({
       path: '/page/index'
     }
   },
-  
-  findIndexById(id) {
+
+  _findIndexById(id) {
     const articleList = this.data.articleList
     for (let i in articleList) {
       if (articleList[i].id == id) {
@@ -108,7 +108,7 @@ Page({
       }
     }
 
-    console.error('triggerFire: Unable to find target item')
+    console.error('error: Unable to find target item')
     return -1
   }
 })

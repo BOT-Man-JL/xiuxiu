@@ -73,8 +73,8 @@
         <view class="item-action">
           <view class="item-action-left">
             <!-- 加火 -->
-            <view class="icon-with-text" bindtap="triggerFire" data-id="{{ item.id }}">
-              <image class="action-icon" src="{{ '/resources/home/fire-' + (item.communityData.hasFire ? 'red' : 'gray') + '.png' }}" />
+            <view class="icon-with-text" bindtap="toggleFire" data-id="{{ item.id }}">
+              <image class="action-icon" src="/resources/home/fire-{{ item.communityData.hasFire ? 'red' : 'gray' }}.png" />
               <text class="action-text">{{ item.communityData.fireCount }}</text>
             </view>
             <!-- 评论 -->

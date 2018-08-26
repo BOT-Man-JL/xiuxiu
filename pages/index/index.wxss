@@ -38,7 +38,6 @@
 .list-container {
   margin-top: 40px;
   width: 100%;
-  opacity: 1;
   transition: opacity 0.5s;
 }
 
@@ -244,7 +243,6 @@
   top: 330rpx;
   width: 750rpx;
   z-index: 9999;
-  opacity: 1;
   transition: opacity 0.5s;
 }
 
@@ -259,7 +257,6 @@
 .popup image {
   flex: 10;
   box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.16), 5px 5px 15px 0px rgba(0, 0, 0, 0.12);
-  opacity: 1;
   transition: opacity 0.3s;
 }
 
