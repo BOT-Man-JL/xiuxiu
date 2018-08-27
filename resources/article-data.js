@@ -1,106 +1,189 @@
 export default {
   locationText: '希格玛大厦',
   articleList: [{
-    id: '1',
-    articleType: 'text',
-    metaData: {
-      authorAvatar: 'https://s1.ax1x.com/2018/08/13/PgrLy6.jpg',
-      authorName: '北京发布',
-      timestamp: '五分钟前',
-      location: '回龙观'
-    },
-    articleData: {
-      text: '为解决回龙观新村广大居民的公共交通出行需求，2018年8月17日首车起，北京公交集团将实施回龙观新村区域公交线网的整体优化。其中，307路、专29、963路3条线路将进驻回龙观新村。',
-    },
-    communityData: {
-      fireCount: 159,
-      commentCount: 832
-    }
-  }, {
-    id: '2',
-    articleType: 'picture',
-    metaData: {
-      authorAvatar: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
-      authorName: 'John Lee',
-      timestamp: '一小时前',
-      location: '房山区'
-    },
-    articleData: {
-      text: '北京房山大安山道路山体塌方！房山区X209军红路大安山乡K19+300处发生山体塌方，造成道路阻断。提醒大家，最近雨天多，尽量不要去北京周边山区！',
-      picture: {
-        src: 'https://s1.ax1x.com/2018/08/13/PgrjeO.jpg'
+      id: '2',  
+      articleType: 'picture',  
+      metaData: {
+          authorAvatar: 'http://img1.lukou.com/static/p/blog/medium/0012/45/32/97/12453297.jpg',  
+          authorName: '希格玛小可爱',  
+          timestamp: '15分钟前',  
+          location: '希格玛大厦'  
+      },
+      articleData: {
+          text: '101小姐姐来希格玛了，就在四楼，快去看啊！',  
+          picture: {  
+            src: 'http://n.sinaimg.cn/sinacn12/107/w1024h683/20180817/2104-hhvciiw5404397.jpg'
+          }
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: 101,  
+          commentCount: 37  
       }
     },
-    communityData: {
-      hasFire: true,
-      fireCount: 6666,
-      commentCount: 998
-    }
-  }, {
-    id: '3',
-    articleType: 'pictures',
-    metaData: {
-      authorAvatar: 'http://pic.qqtn.com/up/2017-11/2017112315111750386.jpg',
-      authorName: 'lele小仙女',
-      timestamp: '二小时前',
-      circle: '希格玛大厦',
-      circleId: '1'
-    },
-    articleData: {
-      text: '我滴妈呀，太可爱辣！海獭宝宝明日花搓脸前还拍拍小手，要大干一番的架势~~~( • ̀ω•́ )完全萌的犯规啊……~真的好奇他们这么可爱的小脑袋里在想什么',
-      pictures: [{
-        src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534163563175&di=464cdfa6f7a7f053a2e6810d39c3b740&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fvideo%2F86%2F86476a1d988a5cf190164c45b842c4d4.jpg'
-      }, {
-        src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534163623360&di=292cac2c3d58c2d92b7bfaab25091304&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20170911%2F94e0e324f9cf4770883dde2dc560fdff.jpeg'
-      }, {
-        src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534163650172&di=8fb14191f50a6d42148098663cc431e2&imgtype=0&src=http%3A%2F%2Fp8.qhimg.com%2Ft01886b53bc9af2cd14.jpg%3Fsize%3D600x399'
-      }]
-    },
-    communityData: {
-      fireCount: 345,
-      commentCount: 78
-    }
-  }, {
-    id: '4',
-    articleType: 'video',
-    metaData: {
-      authorAvatar: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
-      authorName: 'John Lee',
-      timestamp: '一小时前',
-      location: '知春路'
-    },
-    articleData: {
-      text: '十号线地铁里竟然有个女生在抽烟，有个大爷提醒她，女生居然还大骂大爷...大家怎么看？十号线地铁里竟然有个女生在抽烟，大家怎么看？',
-      video: {
-        poster: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
-        src: 'http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400'
+    {
+      id: '2',
+      articleType: 'text',
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/25/PHof0A.jpg',
+          authorName: '千龙网',
+          timestamp: '刚刚',
+          location: '融泽嘉园'
+      },
+      articleData: {
+          text: '近日接到市民举报，融泽嘉园北面的工地天天半夜还在施工，扰乱了附近住户的正常休息。昌平区回龙观镇政府回复：融泽嘉园小区北侧为京张高铁工地，施工单位为中铁七局、中铁六局，正在进行修建高铁作业。对此，执法人员找到现场负责人，要求其加强施工现场管理，并合理安排工期，杜绝夜间施工行为。',
+      },
+      communityData: {
+          hasFire: false,
+          fireCount: 873,
+          commentCount: 58
       }
     },
-    communityData: {
-      fireCount: 666,
-      commentCount: 998
-    }
-  }, {
-    id: '5',
-    articleType: 'link',
-    metaData: {
-      authorAvatar: 'https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg',
-      authorName: 'John Lee',
-      timestamp: '一小时前',
-      circle: '希格玛大厦',
-      circleId: '1'
-    },
-    articleData: {
-      text: '火箭少女空降希格玛！和每一位小姐姐握了手超开心了！火箭少女空降希格玛！！',
-      link: {
-        thumb: 'https://avatars0.githubusercontent.com/u/17026165?s=400&v=4',
-        abstractText: '从少年天才到大器晚成，为什么他才是阿森纳最佳？从少年天才到大器晚成，为什么...',
-        targetUrl: 'https://google.com'
+    {
+      id: '2',  
+      articleType: 'picture',  
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/27/PqhFv4.jpg',  
+          authorName: '魔芋打人',  
+          timestamp: '1小时前',  
+          location: '清华大学'  
+      },
+      articleData: {
+          text: 'AI魔芋翻译机出现在清华大学创新展示中心，周边的小伙伴可以去体验下。',  
+          picture: {  
+              src: 'https://s1.ax1x.com/2018/08/27/PqhVbR.jpg'
+          }
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: 56,  
+          commentCount: 24  
       }
     },
-    communityData: {
-      fireCount: 666,
-      commentCount: 998
+    {
+      id: '2',  
+      articleType: 'picture',  
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/24/PHu3X8.jpg',  
+          authorName: '中国经济网',  
+          timestamp: '昨天 19:32',  
+          location: '故宫博物院'  
+      },
+      articleData: {
+          text: '【延禧宫成故宫热门景点 单霁翔：真是的延禧宫其实是北京最早的烂尾楼】近日，宫斗戏《延禧攻略》《如懿传》热播，剧中角色的住所成为故宫热门景点。21日下午，北青报记者实地探访发现，不少游客因看了电视剧“慕名而来”。@故宫博物院 院长单霁翔透露，真实的延禧宫其实是北京地区最古老的烂尾楼。',  
+          picture: {  
+              src: 'https://s1.ax1x.com/2018/08/24/PHuJ0g.jpg'
+          }
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: 7123,  
+          commentCount: 2456  
+      }
+    },
+    {
+      id: '2',  
+      articleType: 'picture',  
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/22/Poz22q.jpg',  
+          authorName: '新京报',  
+          timestamp: '15分钟前',  
+          location: '中国人民大学'  
+      },
+      articleData: {
+          text: '中国人民大学一栋宿舍楼突发火灾。学生称，起火的为人大红三宿舍楼，主要是研究生宿舍，主要位于顶楼，“大火几乎将楼顶烧没了，不过，现在该楼二楼、三楼都没有学生居住。”目前大火已扑灭，无人员伤亡。',  
+          picture: {  
+              src: 'https://s1.ax1x.com/2018/08/22/Poxqu8.jpg'
+          }
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: 93,  
+          commentCount: 21  
+      }
+    },
+    {
+      id: '2',  
+      articleType: 'news',  
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7X810.jpg',  
+          authorName: '北京日报',  
+          timestamp: '刚刚',  
+          location: '龙泉寺'  
+      },
+      articleData: {
+          text: '【快讯】国家宗教局：举报材料中反映北京龙泉寺住持学诚发送骚扰信息问题，经查属实。',  
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: '1.5万',  
+          commentCount: '4万'  
+      }
+    },
+    {
+      id: '2',  
+      articleType: 'picture',  
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7XqHg.jpg',  
+          authorName: '大众点评',  
+          timestamp: '8小时前',  
+          location: '中关村'  
+      },
+      articleData: {
+          text: '食宝街二期开业！8.10-8.12期间除了坐拥大批美食之外，还能看到各种plmm~王者荣耀及阴阳师顶级coser强势助力食宝街二期开业，夜晚更有现场live和美食一起温暖你的胃！',  
+          picture: {  
+              src: 'https://s1.ax1x.com/2018/08/24/P7XTjf.jpg'
+          }
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: 981,  
+          commentCount: 27  
+      }
+    },
+    {
+      id: '2',  
+      articleType: 'news',  
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/22/Poz22q.jpg ',  
+          authorName: '新京报',  
+          timestamp: '1小时前',  
+          location: '北京'  
+      },
+      articleData: {
+          text: '【重磅】取消文理科，本科一、二批次合并，北京市“新高考”方案来啦！北京高考录取拟于2019年合并本科一、二批次，针对学生等级性考试成绩纳入高考成绩的“折算赋分方案”也于日前出台。北京高考录取拟于2019年合并本科一、二批次，针对学生等级性考试成绩纳入高考成绩的“折算赋分方案”也于日前出台。'
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: '2万',  
+          commentCount: '1.3万'  
+      }
+    },
+    {
+      id: '2',  
+      articleType: 'pictures',  
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7X2He.jpg',  
+          authorName: '北京事儿',  
+          timestamp: '6小时前',  
+          location: '北京'  
+      },
+      articleData: {
+          text: '一个外国人在1990年用胶片相机拍下的北京亚运会时的街景，感受一下。',  
+          pictures: [{  
+              src: 'https://s1.ax1x.com/2018/08/24/P7Xr1x.jpg'
+            },{
+              src: 'https://s1.ax1x.com/2018/08/24/P7Xsc6.jpg'
+            },{
+              src: 'https://s1.ax1x.com/2018/08/24/P7XgBD.jpg'
+          }]
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: 678,  
+          commentCount: 288  
+      }
     }
-  }]
+  ]
 }
+
