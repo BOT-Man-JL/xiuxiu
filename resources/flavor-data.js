@@ -1,7 +1,7 @@
 export default {
   locationText: '希格玛大厦',
   articleList: [{
-      id: '2',  
+      id: '1',  
       articleType: 'text',  
       metaData: {
           authorAvatar: 'http://tx.haiqq.com/uploads/allimg/170501/0SQ21422-8.jpg',  
@@ -42,7 +42,7 @@ export default {
       }
     },
     {
-      id: '2',
+      id: '3',
       articleType: 'pictures',
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/25/PHoVW8.jpg',
@@ -66,7 +66,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '4',  
       articleType: 'picture',  
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/24/PHuQpt.jpg',  
@@ -88,7 +88,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '5',  
       articleType: 'picture',  
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/27/Pqhi2F.jpg',  
@@ -110,7 +110,7 @@ export default {
       }
     },
     {
-      id: '2',
+      id: '6',
       articleType: 'pictures',
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/25/PHowwR.jpg',
@@ -134,7 +134,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '7',  
       articleType: 'picture',  
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/27/Pqh0xg.jpg',  
@@ -156,7 +156,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '8',  
       articleType: 'picture',  
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/24/PHuGnS.jpg',  
@@ -178,7 +178,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '9',  
       articleType: 'pictures',  
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/24/PHu3X8.jpg',  
@@ -201,7 +201,7 @@ export default {
           commentCount: 246  
       }
     },{
-      id: '2',  
+      id: '10',  
       articleType: 'picture',  
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7XqHg.jpg',  

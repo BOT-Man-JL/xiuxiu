@@ -1,7 +1,7 @@
 export default {
   locationText: '希格玛大厦',
   articleList: [{
-      id: '2',  
+      id: '1',  
       articleType: 'picture',  
       metaData: {
           authorAvatar: 'http://img1.lukou.com/static/p/blog/medium/0012/45/32/97/12453297.jpg',  
@@ -44,7 +44,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '3',  
       articleType: 'news',  
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7X810.jpg',  
@@ -62,7 +62,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '4',  
       articleType: 'pictures',  
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7X2He.jpg',  
@@ -87,7 +87,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '5',  
       articleType: 'picture',  
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7XZX8.jpg',  
@@ -108,7 +108,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '6',  
       articleType: 'picture',  
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/24/PHul1P.jpg',  
@@ -130,7 +130,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '7',  
       articleType: 'picture',  
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/27/PqhFv4.jpg',  
@@ -152,7 +152,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '8',  
       articleType: 'news',  
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/22/Poz22q.jpg ',  
@@ -170,7 +170,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '9',  
       articleType: 'text',  
       metaData: {
           authorAvatar: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535306273419&di=ab12600e16f7c049dbdbccec0ebc9114&imgtype=0&src=http%3A%2F%2Fimg5q.duitang.com%2Fuploads%2Fitem%2F201502%2F06%2F20150206172230_eYKQT.thumb.700_0.jpeg',  
@@ -189,7 +189,7 @@ export default {
       }
     },
     {
-      id: '2',
+      id: '10',
       articleType: 'text',
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/25/PHof0A.jpg',
@@ -208,7 +208,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '11',  
       articleType: 'pictures',  
       metaData: {
           authorAvatar: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535305796801&di=9d69779247641f8daca52975552ade65&imgtype=0&src=http%3A%2F%2Fimg18.3lian.com%2Fd%2Ffile%2F201709%2F08%2Fc4b6815edcad535afdf16471feb54b84.jpg',  
@@ -233,7 +233,7 @@ export default {
       }
     },
     {
-      id: '2',  
+      id: '12',  
       articleType: 'text',  
       metaData: {
           authorAvatar: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535360034483&di=b744c2584541d3f936b2401965e987e8&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F472309f790529822eae390e7ddca7bcb0b46d4c6.jpg',  
