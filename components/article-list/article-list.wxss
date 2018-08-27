@@ -4,11 +4,6 @@
 
 .list-container {
   width: 100%;
-  transition: opacity 0.5s;
-}
-
-.list-container.masking {
-  opacity: 0.3;
 }
 
 .list-item {
@@ -16,14 +11,18 @@
   flex-direction: row;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
   margin: 3%;
-  padding: 3%;
+  padding: 2%;
   background: #fff;
   border-radius: 5px;
 }
 
 /* left panel */
 
-.avatar image {
+.list-item .avatar {
+  margin-right: 1%;
+}
+
+.list-item .avatar image {
   width: 40px;
   height: 40px;
   border-radius: 200px;
@@ -36,7 +35,7 @@
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
-  padding: 0 3%;
+  padding: 0 2%;
 }
 
 /* right panel: header */
@@ -201,35 +200,41 @@
 
 /* item content */
 
-.popup {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.popup, .popup-mask {
   position: fixed;
-  top: 330rpx;
-  width: 750rpx;
-  z-index: 9999;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
   transition: opacity 0.5s;
 }
 
-.popup.fade {
+.popup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-mask {
+  background: #f0f0f0;
+  z-index: 999;
+  opacity: 0.6;
+}
+
+.popup.fade, .popup-mask.fade {
   opacity: 0;
 }
 
-.popup.hide {
+.popup.hide, .popup-mask.hide {
   display: none;
 }
 
 .popup image {
-  flex: 10;
-  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.16), 5px 5px 15px 0px rgba(0, 0, 0, 0.12);
+  width: 90vw;
+  height: 90vh;
   transition: opacity 0.3s;
 }
 
 .popup.fade image {
   opacity: 0;
-}
-
-.popup view {
-  flex: 1;
 }

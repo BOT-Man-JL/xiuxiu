@@ -1,7 +1,7 @@
 <!--article-list.wxml-->
 
 <!--每一条内容-->
-<view class="list-container {{ popupState ? '' : 'masking' }}">
+<view class="list-container">
   <view wx:for="{{ articleList }}" wx:key="id" class="list-item">
     <!--作者头像-->
     <view class="avatar">
@@ -89,7 +89,6 @@
 
 <!--图片弹框-->
 <view class="popup {{ popupState }}" bindtap="hidePopup">
-  <view></view>
-  <image wx:if="{{ bigImageSrc }}" src="{{ bigImageSrc }}" mode="widthFix" />
-  <view></view>
+  <image wx:if="{{ bigImageSrc }}" class="popup-content" src="{{ bigImageSrc }}" mode="aspectFit" />
 </view>
+<view class="popup-mask {{ popupState }}"></view>
