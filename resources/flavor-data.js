@@ -7,7 +7,8 @@ export default {
           authorAvatar: 'http://tx.haiqq.com/uploads/allimg/170501/0SQ21422-8.jpg',  
           authorName: '不要问我名字',  
           timestamp: '1小时前',  
-          location: '希格玛大厦'  
+          circle: '希格玛大厦', 
+          circleId: '1'  
       },
       articleData: {
           text: '希格玛b1，西餐厅夜宵，酸菜炒饭？好像叫这个名字的黑暗料理。跟组里同事一起吃饭，只有我和另一个也吃这个的同事闹肚子，别的同事没事。想问希格玛同事还有类似遭遇的吗？',  
@@ -20,69 +21,48 @@ export default {
     },
     {
       id: '2',  
-      articleType: 'pictures',  
+      articleType: 'picture',  
       metaData: {
           authorAvatar: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535305796801&di=9d69779247641f8daca52975552ade65&imgtype=0&src=http%3A%2F%2Fimg18.3lian.com%2Fd%2Ffile%2F201709%2F08%2Fc4b6815edcad535afdf16471feb54b84.jpg',  
-          authorName: '北京吃喝玩乐',  
-          timestamp: '昨天',  
-          location: '五道口'  
+          authorName: '惊讶comedy',  
+          timestamp: '前天',  
+          circle: '五道口', 
+          circleId: '2'  
       },
       articleData: {
-          text: '五道口华联新开了一家性价比超高的萨莉亚。点了两个小披萨都很好吃，没有很厚的边，脆脆的很好吃。其他的烤鸡翅和烤饭也很实惠。没想到的是在一家西餐厅竟然爱上了裙带菜。不过金枪鱼汤面不推荐，有点腥。五道口这家萨莉亚外国人超多，坐久了感觉自己才是外国人。',
-          pictures: [{  
-              src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535306515855&di=9b7759f70a752c32ccca2519cdea0a2d&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01b09d5930e569a8012193a3c3f923.JPG%401280w_1l_2o_100sh.jpg'
-            },{
-              src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535306515855&di=235084a72b81c194a37b72219ae887c7&imgtype=0&src=http%3A%2F%2Fuploads.xuexila.com%2Fallimg%2F1504%2F631-150416164951A8.jpg'
-            },{
-              src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535306515855&di=ea6c5ce84c272f11e89801402d7b8cf5&imgtype=0&src=http%3A%2F%2Fimage-swws.258.com%2F1%2F2018%2F0120%2F09%2F5a62a1baf2d0c.jpg'
-            }]
+          text: '距离下个周末还有4天，但距离跟周末等量的快乐机会，只有几个小时。今晚七点半，来五道口706青年空间，听一场单口戏剧开放麦，提前体验周末般的快乐能量~',  
+          picture: {  
+              src: 'https://s1.ax1x.com/2018/08/26/PqEzB4.png'
+          }
       },
       communityData: {
           hasFire: false,  
           fireCount: 46,  
-          commentCount: 34  
+          commentCount: 12  
       }
     },
     {
       id: '2',
-      articleType: 'picture',
+      articleType: 'pictures',
       metaData: {
-          authorAvatar: 'https://s1.ax1x.com/2018/08/25/PHowwR.jpg',
-          authorName: '气象北京',
-          timestamp: '昨天',
-          location: '融泽嘉园'
+          authorAvatar: 'https://s1.ax1x.com/2018/08/25/PHoVW8.jpg',
+          authorName: '小柯基琥珀的港湾',
+          timestamp: '5小时前',
+          circle: '融泽嘉园', 
+          circleId: '3'
       },
       articleData: {
-          text: '昨日上午，昌平气象局到回龙观融泽家园社区开展气象科普进社区活动',
-          picture: {
-              src: 'https://s1.ax1x.com/2018/08/25/PHoDFx.jpg'
-          }
+          text: '在昌平融泽嘉园大门口看见了这条流浪狗，好像得病了，好可怜，有人可以帮助他吗？”目前大火已扑灭，无人员伤亡。',
+          pictures: [{
+              src: 'https://s1.ax1x.com/2018/08/25/PHopsH.jpg'
+          },{
+              src: 'https://s1.ax1x.com/2018/08/25/PHoFot.jpg'
+          }]
       },
       communityData: {
           hasFire: false,
-          fireCount: 8,
-          commentCount: 2
-      }
-    },
-    {
-      id: '2',  
-      articleType: 'picture',  
-      metaData: {
-          authorAvatar: 'https://s1.ax1x.com/2018/08/27/Pqhi2F.jpg',  
-          authorName: '清新如安',  
-          timestamp: '1小时前',  
-          location: '北京，清华大学本部'  
-      },
-      articleData: {
-          text: '2018年清华大学新闻与传播学院“面向未来的新闻传播”夏令营圆满结束。',  
-          picture: {  
-              src: 'https://s1.ax1x.com/2018/08/27/PqhEr9.jpg'
-          }
-      },
-      communityData: {
-          hasFire: false,  
-          fireCount: 2,  
-          commentCount: 4  
+          fireCount: 12,
+          commentCount: 8
       }
     },
     {
@@ -92,7 +72,8 @@ export default {
           authorAvatar: 'https://s1.ax1x.com/2018/08/24/PHuQpt.jpg',  
           authorName: '小小马以',  
           timestamp: '3小时前',  
-          location: '故宫博物院'  
+          circle: '故宫博物馆', 
+          circleId: '5'  
       },
       articleData: {
           text: '故宫最美的季节已经来了',  
@@ -103,49 +84,123 @@ export default {
       communityData: {
           hasFire: false,  
           fireCount: 16,  
-          commentCount:0  
+          commentCount:2  
       }
     },
     {
       id: '2',  
       articleType: 'picture',  
       metaData: {
-          authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7XZX8.jpg',  
-          authorName: '百香果的夏天',  
-          timestamp: '5分钟前',  
-          location: '知春路'  
+          authorAvatar: 'https://s1.ax1x.com/2018/08/27/Pqhi2F.jpg',  
+          authorName: '清新如安',  
+          timestamp: '1小时前',  
+          circle: '清华大学', 
+          circleId: '4'  
       },
       articleData: {
-          text: '爱就像蓝天白云，晴空万里。感受下北京今日的蓝天吧，雾霾治理初显成效！',  
+          text: '2018年清华大学新闻与传播学院“面向未来的新闻传播”夏令营圆满结束。',  
           picture: {  
-              src: 'https://s1.ax1x.com/2018/08/24/P7XMkj.jpg'
+              src: 'https://s1.ax1x.com/2018/08/27/PqhEr9.jpg'
           }
       },
       communityData: {
           hasFire: false,  
-          fireCount: 23,  
-          commentCount: 10  
+          fireCount: 3,  
+          commentCount: 4  
+      }
+    },
+    {
+      id: '2',
+      articleType: 'pictures',
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/25/PHowwR.jpg',
+          authorName: '气象北京',
+          timestamp: '昨天',
+          circle: '融泽嘉园', 
+          circleId: '3'
+      },
+      articleData: {
+          text: '昨日上午，昌平气象局到回龙观融泽家园社区开展气象科普进社区活动',
+          pictures: [{
+              src: 'https://s1.ax1x.com/2018/08/25/PHoDFx.jpg'
+          },{
+              src: 'https://s1.ax1x.com/2018/08/25/PHorY6.jpg'
+          }]
+      },
+      communityData: {
+          hasFire: false,
+          fireCount: 8,
+          commentCount: 4
       }
     },
     {
       id: '2',  
-      articleType: 'news',  
+      articleType: 'picture',  
       metaData: {
-          authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7X810.jpg',  
-          authorName: '北京日报',  
-          timestamp: '刚刚',  
-          location: '龙泉寺'  
+          authorAvatar: 'https://s1.ax1x.com/2018/08/27/Pqh0xg.jpg',  
+          authorName: 'BU.Z',  
+          timestamp: '2小时前', 
+          circle: '清华大学', 
+          circleId: '4'  
       },
       articleData: {
-          text: '【快讯】国家宗教局：举报材料中反映北京龙泉寺住持学诚发送骚扰信息问题，经查属实。',  
+          text: '清华大学博物馆筹建清华历史专题展览，大学的文化底蕴与沉淀尽显于此。',  
+          picture: {  
+              src: 'https://s1.ax1x.com/2018/08/27/PqhP8U.jpg'
+          }
       },
       communityData: {
           hasFire: false,  
-          fireCount: '1.5万',  
-          commentCount: '4万'  
+          fireCount: 32,  
+          commentCount:12 
       }
     },
     {
+      id: '2',  
+      articleType: 'picture',  
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/24/PHuGnS.jpg',  
+          authorName: '桃之大人',  
+          timestamp: '1小时前',  
+          circle: '故宫博物馆', 
+          circleId: '5'  
+      },
+      articleData: {
+          text: '特地绕了一圈去参观延禧宫，里面都是看了电视剧延禧攻略来才点的人。还可以手机扫码用VR技术看复员后的延禧宫。',  
+          picture: {  
+              src: 'https://s1.ax1x.com/2018/08/24/PHuNkj.jpg'
+          }
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: 121,  
+          commentCount: 36  
+      }
+    },
+    {
+      id: '2',  
+      articleType: 'pictures',  
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/24/PHu3X8.jpg',  
+          authorName: '中国经济网',  
+          timestamp: '昨天 19:32',  
+          circle: '故宫博物馆', 
+          circleId: '5'  
+      },
+      articleData: {
+          text: '【延禧宫成故宫热门景点 单霁翔：真是的延禧宫其实是北京最早的烂尾楼】近日，宫斗戏《延禧攻略》《如懿传》热播，剧中角色的住所成为故宫热门景点。21日下午，北青报记者实地探访发现，不少游客因看了电视剧“慕名而来”。@故宫博物院 院长单霁翔透露，真实的延禧宫其实是北京地区最古老的烂尾楼。',  
+          pictures: [{  
+              src: 'https://s1.ax1x.com/2018/08/24/PHuJ0g.jpg'
+          },{
+              src: 'https://s1.ax1x.com/2018/08/24/PHuUts.jpg'
+          }]
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: 713,  
+          commentCount: 246  
+      }
+    },{
       id: '2',  
       articleType: 'picture',  
       metaData: {
@@ -164,48 +219,6 @@ export default {
           hasFire: false,  
           fireCount: 981,  
           commentCount: 27  
-      }
-    },
-    {
-      id: '2',  
-      articleType: 'picture',  
-      metaData: {
-          authorAvatar: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535305796801&di=9d69779247641f8daca52975552ade65&imgtype=0&src=http%3A%2F%2Fimg18.3lian.com%2Fd%2Ffile%2F201709%2F08%2Fc4b6815edcad535afdf16471feb54b84.jpg',  
-          authorName: '惊讶comedy',  
-          timestamp: '前天',  
-          location: '五道口'  
-      },
-      articleData: {
-          text: '距离下个周末还有4天，但距离跟周末等量的快乐机会，只有几个小时。今晚七点半，来五道口706青年空间，听一场单口戏剧开放麦，提前体验周末般的快乐能量~',  
-          picture: {  
-              src: 'https://s1.ax1x.com/2018/08/26/PqEzB4.png'
-          }
-      },
-      communityData: {
-          hasFire: false,  
-          fireCount: 46,  
-          commentCount: 12  
-      }
-    },
-    {
-      id: '2',  
-      articleType: 'picture',  
-      metaData: {
-          authorAvatar: 'https://s1.ax1x.com/2018/08/24/PHuGnS.jpg',  
-          authorName: '桃之大人',  
-          timestamp: '1小时前',  
-          location: '故宫博物院'  
-      },
-      articleData: {
-          text: '特地绕了一圈去参观延禧宫，里面都是看了电视剧延禧攻略来才点的人。还可以手机扫码用VR技术看复员后的延禧宫。',  
-          picture: {  
-              src: 'https://s1.ax1x.com/2018/08/24/PHuNkj.jpg'
-          }
-      },
-      communityData: {
-          hasFire: false,  
-          fireCount: 12,  
-          commentCount: 36 
       }
     }
   ]
