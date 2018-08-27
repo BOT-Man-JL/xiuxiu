@@ -1,4 +1,7 @@
 export default {
+  pageData: {
+    pulldownPrompt: '下拉后，重新定位'
+  },
   locationText: '希格玛大厦',
   articleList: [{
       id: '1',  

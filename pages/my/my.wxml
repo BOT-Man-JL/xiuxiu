@@ -1,2 +1,2 @@
 <!--my.wxml-->
-<image src="/resources/fake/my.jpg" style="width: 100%" mode="widthFix" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃" />
+<image src="/resources/fake/my.jpg" style="width: 100%" mode="widthFix" bindtap="promptUnsupported" data-text="个人系统暂未开放 🙃" />

@@ -25,7 +25,7 @@
     <view class="page-header">
       <text>{{ pageData.findingCirclesTitle }}</text>
     </view>
-    <image src="/resources/circle/search.png" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃" />
+    <image src="/resources/circle/search.png" bindtap="promptUnsupported" data-text="搜索功能暂未开放 🙃" />
   </view>
   <view class="thin-splitter" />
   <view class="circle-list">

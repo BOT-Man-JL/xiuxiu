@@ -33,6 +33,13 @@
   margin: 0 3px;
 }
 
-.article-list {
-  margin-top: 40px;
+.pulldown-prompt {
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-align: center;
+  font-size: 15px;
+  color: #3c3c3c;
 }

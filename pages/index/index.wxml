@@ -2,10 +2,14 @@
 
 <!--顶栏-->
 <view class="top-bar">
-  <view class="icon-with-text" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
+  <view class="icon-with-text">
     <image class="location-icon" src="/resources/home/location-white.png" />
     <text class="location-text">{{ locationText }}</text>
   </view>
+</view>
+
+<view class="pulldown-prompt">
+  <text>{{ pageData.pulldownPrompt }}</text>
 </view>
 
 <view class="article-list">

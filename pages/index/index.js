@@ -9,14 +9,17 @@ Page({
   onPullDownRefresh() {
     const locationText = this.data.locationText
     const articleList = this.data.articleList
+    const pulldownPrompt = this.data.pageData.pulldownPrompt
     this.setData({
-      locationText: config.loadingPrompt,
-      articleList: []
+      locationText: config.locatingPrompt,
+      articleList: [],
+      'pageData.pulldownPrompt': ''
     }, () => {
       setTimeout(() => {
         this.setData({
           locationText: locationText,
-          articleList: articleList
+          articleList: articleList,
+          'pageData.pulldownPrompt': pulldownPrompt
         })
         wx.hideLoading()
         wx.stopPullDownRefresh()
@@ -24,14 +27,6 @@ Page({
     })
     wx.showLoading({
       title: config.loadingPrompt
-    })
-  },
-
-  promptUnsupported(e) {
-    wx.showModal({
-      title: config.appName,
-      content: e.currentTarget.dataset.text,
-      showCancel: false
     })
   }
 })

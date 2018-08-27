@@ -1,5 +1,5 @@
 <!--flavor.wxml-->
-<view class="top-bar" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
+<view class="top-bar" bindtap="promptUnsupported" data-text="加料系统暂未开放 🙃">
   <image src="/resources/fake/flavor.png" style="width: 750rpx" mode="widthFix" />
 </view>
 

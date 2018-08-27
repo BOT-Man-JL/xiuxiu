@@ -5,7 +5,7 @@
   <view wx:for="{{ articleList }}" wx:key="id" class="list-item">
     <!--作者头像-->
     <view class="avatar">
-      <image src="{{ item.metaData.authorAvatar }}" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃" mode="aspectFill" />
+      <image src="{{ item.metaData.authorAvatar }}" bindtap="promptUnsupported" data-text="用户系统暂未开放 🙃" mode="aspectFill" />
     </view>
 
     <!--右边的部分-->
@@ -14,7 +14,7 @@
       <view class="list-item-header">
         <!--作者名称-->
         <view class="item-author-text">
-          <text bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">{{ item.metaData.authorName }}</text>
+          <text bindtap="promptUnsupported" data-text="用户系统暂未开放 🙃">{{ item.metaData.authorName }}</text>
         </view>
         <!--时间戳 + 位置/圈子-->
         <view class="list-item-detail">
@@ -70,7 +70,7 @@
               <text class="action-text">{{ item.communityData.fireCount }}</text>
             </view>
             <!-- 评论 -->
-            <view class="icon-with-text" bindtap="promptUnsupported" data-text="暂未开放此功能 🙃">
+            <view class="icon-with-text" bindtap="promptUnsupported" data-text="暂不支持评论 🙃">
               <image class="action-icon" src="/resources/home/comment.png" />
               <text class="action-text">{{ item.communityData.commentCount }}</text>
             </view>
