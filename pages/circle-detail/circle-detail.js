@@ -19,6 +19,27 @@ Page({
     })
   },
 
+  onPullDownRefresh() {
+    const selectedArticles = this.data.currentCircle.selectedArticles
+    const squareArticles = this.data.currentCircle.squareArticles
+    this.setData({
+      'currentCircle.selectedArticles': [],
+      'currentCircle.squareArticles': []
+    }, () => {
+      setTimeout(() => {
+        this.setData({
+          'currentCircle.selectedArticles': selectedArticles,
+          'currentCircle.squareArticles': squareArticles
+        })
+        wx.hideLoading()
+        wx.stopPullDownRefresh()
+      }, config.loadingTime)
+    })
+    wx.showLoading({
+      title: config.loadingPrompt
+    })
+  },
+
   selectTab: function(e) {
     this.setData({
       selectedTab: e.currentTarget.dataset.tab
