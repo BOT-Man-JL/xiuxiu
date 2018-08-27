@@ -23,3 +23,7 @@
     <article-list article-list="{{ currentCircle.squareArticles }}" />
   </view>
 </view>
+
+<view class="flavor-btn">
+  <image src="/resources/circle/pencil.png" bindtap="navigateToFlavorPage" />
+</view>

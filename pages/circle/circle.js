@@ -61,5 +61,13 @@ Page({
         })
       }, 500)
     }
+  },
+
+  promptUnsupported(e) {
+    wx.showModal({
+      title: config.appName,
+      content: e.currentTarget.dataset.text,
+      showCancel: false
+    })
   }
 })

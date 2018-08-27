@@ -33,5 +33,5 @@ Page({
       content: e.currentTarget.dataset.text,
       showCancel: false
     })
-  },
+  }
 })

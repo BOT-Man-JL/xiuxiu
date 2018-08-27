@@ -25,6 +25,12 @@ Page({
     })
   },
 
+  navigateToFlavorPage(e) {
+    wx.switchTab({
+      url: '/pages/flavor/flavor'
+    })
+  },
+
   _findIndexById(id) {
     const circleList = this.data.circleList
     for (let i in circleList) {

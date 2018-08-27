@@ -1,5 +1,4 @@
 export default {
-  locationText: '希格玛大厦',
   articleList: [{
       id: '1',  
       articleType: 'text',  
@@ -193,6 +192,8 @@ export default {
               src: 'https://s1.ax1x.com/2018/08/24/PHuJ0g.jpg'
           },{
               src: 'https://s1.ax1x.com/2018/08/24/PHuUts.jpg'
+          }, {
+              src: 'https://s1.ax1x.com/2018/08/24/PHuNkj.jpg'
           }]
       },
       communityData: {
