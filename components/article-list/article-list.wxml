@@ -88,7 +88,7 @@
 </view>
 
 <!--图片弹框-->
-<view class="popup {{ popupState }}" bindtap="hidePopup">
+<view class="popup {{ popupState }}" bindtap="hidePopup" catchtouchmove="catchTouchMove">
   <image wx:if="{{ bigImageSrc }}" class="popup-content" src="{{ bigImageSrc }}" mode="aspectFit" />
 </view>
 <view class="popup-mask {{ popupState }}"></view>

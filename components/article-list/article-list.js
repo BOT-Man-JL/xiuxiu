@@ -49,6 +49,10 @@ Component({
       }, 500)
     },
 
+    catchTouchMove(e) {
+      // do nothing
+    },
+
     promptUnsupported(e) {
       wx.showModal({
         title: config.appName,
