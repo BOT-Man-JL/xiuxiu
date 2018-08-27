@@ -7,7 +7,8 @@ export default {
           authorAvatar: 'http://img1.lukou.com/static/p/blog/medium/0012/45/32/97/12453297.jpg',  
           authorName: '希格玛小可爱',  
           timestamp: '15分钟前',  
-          location: '希格玛大厦'  
+          circle: '希格玛大厦', 
+          circleId: '1'
       },
       articleData: {
           text: '101小姐姐来希格玛了，就在四楼，快去看啊！',  
@@ -19,66 +20,6 @@ export default {
           hasFire: false,  
           fireCount: 101,  
           commentCount: 37  
-      }
-    },
-    {
-      id: '2',
-      articleType: 'text',
-      metaData: {
-          authorAvatar: 'https://s1.ax1x.com/2018/08/25/PHof0A.jpg',
-          authorName: '千龙网',
-          timestamp: '刚刚',
-          location: '融泽嘉园'
-      },
-      articleData: {
-          text: '近日接到市民举报，融泽嘉园北面的工地天天半夜还在施工，扰乱了附近住户的正常休息。昌平区回龙观镇政府回复：融泽嘉园小区北侧为京张高铁工地，施工单位为中铁七局、中铁六局，正在进行修建高铁作业。对此，执法人员找到现场负责人，要求其加强施工现场管理，并合理安排工期，杜绝夜间施工行为。',
-      },
-      communityData: {
-          hasFire: false,
-          fireCount: 873,
-          commentCount: 58
-      }
-    },
-    {
-      id: '2',  
-      articleType: 'picture',  
-      metaData: {
-          authorAvatar: 'https://s1.ax1x.com/2018/08/27/PqhFv4.jpg',  
-          authorName: '魔芋打人',  
-          timestamp: '1小时前',  
-          location: '清华大学'  
-      },
-      articleData: {
-          text: 'AI魔芋翻译机出现在清华大学创新展示中心，周边的小伙伴可以去体验下。',  
-          picture: {  
-              src: 'https://s1.ax1x.com/2018/08/27/PqhVbR.jpg'
-          }
-      },
-      communityData: {
-          hasFire: false,  
-          fireCount: 56,  
-          commentCount: 24  
-      }
-    },
-    {
-      id: '2',  
-      articleType: 'picture',  
-      metaData: {
-          authorAvatar: 'https://s1.ax1x.com/2018/08/24/PHu3X8.jpg',  
-          authorName: '中国经济网',  
-          timestamp: '昨天 19:32',  
-          location: '故宫博物院'  
-      },
-      articleData: {
-          text: '【延禧宫成故宫热门景点 单霁翔：真是的延禧宫其实是北京最早的烂尾楼】近日，宫斗戏《延禧攻略》《如懿传》热播，剧中角色的住所成为故宫热门景点。21日下午，北青报记者实地探访发现，不少游客因看了电视剧“慕名而来”。@故宫博物院 院长单霁翔透露，真实的延禧宫其实是北京地区最古老的烂尾楼。',  
-          picture: {  
-              src: 'https://s1.ax1x.com/2018/08/24/PHuJ0g.jpg'
-          }
-      },
-      communityData: {
-          hasFire: false,  
-          fireCount: 7123,  
-          commentCount: 2456  
       }
     },
     {
@@ -122,23 +63,87 @@ export default {
     },
     {
       id: '2',  
-      articleType: 'picture',  
+      articleType: 'pictures',  
       metaData: {
-          authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7XqHg.jpg',  
-          authorName: '大众点评',  
-          timestamp: '8小时前',  
-          location: '中关村'  
+          authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7X2He.jpg',  
+          authorName: '北京事儿',  
+          timestamp: '6小时前',  
+          location: '北京'  
       },
       articleData: {
-          text: '食宝街二期开业！8.10-8.12期间除了坐拥大批美食之外，还能看到各种plmm~王者荣耀及阴阳师顶级coser强势助力食宝街二期开业，夜晚更有现场live和美食一起温暖你的胃！',  
+          text: '一个外国人在1990年用胶片相机拍下的北京亚运会时的街景，感受一下。',  
+          pictures: [{  
+              src: 'https://s1.ax1x.com/2018/08/24/P7Xr1x.jpg'
+            },{
+              src: 'https://s1.ax1x.com/2018/08/24/P7Xsc6.jpg'
+            },{
+              src: 'https://s1.ax1x.com/2018/08/24/P7XgBD.jpg'
+          }]
+      }
+    },
+    {
+      id: '2',  
+      articleType: 'picture',  
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7XZX8.jpg',  
+          authorName: '百香果的夏天',  
+          timestamp: '5分钟前',  
+          location: '知春路'  
+      },
+      articleData: {
+          text: '爱就像蓝天白云，晴空万里。感受下北京今日的蓝天吧，雾霾治理初显成效！',  
           picture: {  
-              src: 'https://s1.ax1x.com/2018/08/24/P7XTjf.jpg'
+              src: 'https://s1.ax1x.com/2018/08/24/P7XMkj.jpg'
           }
       },
       communityData: {
           hasFire: false,  
-          fireCount: 981,  
-          commentCount: 27  
+          fireCount: 23,  
+          commentCount: 10  
+      }
+    },
+    {
+      id: '2',  
+      articleType: 'picture',  
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/24/PHul1P.jpg',  
+          authorName: '妖精之吻',  
+          timestamp: '1小时前',  
+          circle: '故宫博物馆', 
+          circleId: '5'
+      },
+      articleData: {
+          text: '外地牌照车辆于8月24日周五18:20左右进入西二环主路行使，并违反尾号限行措施，并在晚高峰时期进入五环内！',  
+          picture: {  
+              src: 'https://s1.ax1x.com/2018/08/24/PHu16f.jpg'
+          }
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: 2,  
+          commentCount: 4  
+      }
+    },
+    {
+      id: '2',  
+      articleType: 'picture',  
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/27/PqhFv4.jpg',  
+          authorName: '魔芋打人',  
+          timestamp: '1小时前',  
+          circle: '清华大学', 
+          circleId: '4'  
+      },
+      articleData: {
+          text: 'AI魔芋翻译机出现在清华大学创新展示中心，周边的小伙伴可以去体验下。',  
+          picture: {  
+              src: 'https://s1.ax1x.com/2018/08/27/PqhVbR.jpg'
+          }
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: 56,  
+          commentCount: 24  
       }
     },
     {
@@ -161,27 +166,84 @@ export default {
     },
     {
       id: '2',  
-      articleType: 'pictures',  
+      articleType: 'text',  
       metaData: {
-          authorAvatar: 'https://s1.ax1x.com/2018/08/24/P7X2He.jpg',  
-          authorName: '北京事儿',  
+          authorAvatar: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535306273419&di=ab12600e16f7c049dbdbccec0ebc9114&imgtype=0&src=http%3A%2F%2Fimg5q.duitang.com%2Fuploads%2Fitem%2F201502%2F06%2F20150206172230_eYKQT.thumb.700_0.jpeg',  
+          authorName: '梁斌penny',  
           timestamp: '6小时前',  
-          location: '北京'  
+          circle: '五道口', 
+          circleId: '2'  
       },
       articleData: {
-          text: '一个外国人在1990年用胶片相机拍下的北京亚运会时的街景，感受一下。',  
-          pictures: [{  
-              src: 'https://s1.ax1x.com/2018/08/24/P7Xr1x.jpg'
-            },{
-              src: 'https://s1.ax1x.com/2018/08/24/P7Xsc6.jpg'
-            },{
-              src: 'https://s1.ax1x.com/2018/08/24/P7XgBD.jpg'
-          }]
+          text: '不要去北京五道口的“信服”维修任何设备！这是一家黑店！我进去买手机没有合适的，他们还骂骂咧咧不让我走，言语有威胁，我声称报警，他们才放弃了。',  
       },
       communityData: {
           hasFire: false,  
-          fireCount: 678,  
-          commentCount: 288
+          fireCount: 123,  
+          commentCount: 21  
+      }
+    },
+    {
+      id: '2',
+      articleType: 'text',
+      metaData: {
+          authorAvatar: 'https://s1.ax1x.com/2018/08/25/PHof0A.jpg',
+          authorName: '千龙网',
+          timestamp: '刚刚',
+          circle: '融泽嘉园', 
+          circleId: '3'
+      },
+      articleData: {
+          text: '近日接到市民举报，融泽嘉园北面的工地天天半夜还在施工，扰乱了附近住户的正常休息。昌平区回龙观镇政府回复：融泽嘉园小区北侧为京张高铁工地，施工单位为中铁七局、中铁六局，正在进行修建高铁作业。对此，执法人员找到现场负责人，要求其加强施工现场管理，并合理安排工期，杜绝夜间施工行为。',
+      },
+      communityData: {
+          hasFire: false,
+          fireCount: 873,
+          commentCount: 58
+      }
+    },
+    {
+      id: '2',  
+      articleType: 'pictures',  
+      metaData: {
+          authorAvatar: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535305796801&di=9d69779247641f8daca52975552ade65&imgtype=0&src=http%3A%2F%2Fimg18.3lian.com%2Fd%2Ffile%2F201709%2F08%2Fc4b6815edcad535afdf16471feb54b84.jpg',  
+          authorName: '北京吃喝玩乐',  
+          timestamp: '昨天',  
+          circle: '五道口', circleId: 2  
+      },
+      articleData: {
+          text: '五道口华联新开了一家性价比超高的萨莉亚。点了两个小披萨都很好吃，没有很厚的边，脆脆的很好吃。其他的烤鸡翅和烤饭也很实惠。没想到的是在一家西餐厅竟然爱上了裙带菜。不过金枪鱼汤面不推荐，有点腥。五道口这家萨莉亚外国人超多，坐久了感觉自己才是外国人。',
+          pictures: [{  
+              src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535306515855&di=9b7759f70a752c32ccca2519cdea0a2d&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01b09d5930e569a8012193a3c3f923.JPG%401280w_1l_2o_100sh.jpg'
+            },{
+              src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535306515855&di=235084a72b81c194a37b72219ae887c7&imgtype=0&src=http%3A%2F%2Fuploads.xuexila.com%2Fallimg%2F1504%2F631-150416164951A8.jpg'
+            },{
+              src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535306515855&di=ea6c5ce84c272f11e89801402d7b8cf5&imgtype=0&src=http%3A%2F%2Fimage-swws.258.com%2F1%2F2018%2F0120%2F09%2F5a62a1baf2d0c.jpg'
+            }]
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: 46,  
+          commentCount: 34  
+      }
+    },
+    {
+      id: '2',  
+      articleType: 'text',  
+      metaData: {
+          authorAvatar: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535360034483&di=b744c2584541d3f936b2401965e987e8&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F472309f790529822eae390e7ddca7bcb0b46d4c6.jpg',  
+          authorName: '匿名',  
+          timestamp: '2小时前', 
+          circle: '希格玛大厦', 
+          circleId: '1'  
+      },
+      articleData: {
+          text: '中午去希格玛大厦楼下取外卖，在找外卖小哥的时候，冷不丁被唾沫星子喷了半边脸，只见旁边一男的朝快递小哥破口大骂（30多岁，方脸，皮肤略黑，带眼镜，身高一米八多，穿墨绿色冲锋衣）限制级的脏话一句接一句，声音大得街对面都能听到，足足骂了三分钟，而且是在快递小哥没有回嘴的情况下！“你没到打什么电话？！caonm的，**玩意……！”',  
+      },
+      communityData: {
+          hasFire: false,  
+          fireCount: 132,  
+          commentCount:72  
       }
     }
   ]
