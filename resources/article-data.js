@@ -181,7 +181,7 @@ export default {
       communityData: {
           hasFire: false,  
           fireCount: 678,  
-          commentCount: 288  
+          commentCount: 288
       }
     }
   ]

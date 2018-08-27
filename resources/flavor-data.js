@@ -205,7 +205,7 @@ export default {
       communityData: {
           hasFire: false,  
           fireCount: 12,  
-          commentCount: 36  
+          commentCount: 36 
       }
     }
   ]

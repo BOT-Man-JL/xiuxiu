@@ -171,27 +171,6 @@ export default {
     }],
     squareArticles: [{
       id: '2',  
-      articleType: 'picture',  
-      metaData: {
-          authorAvatar: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535305796801&di=9d69779247641f8daca52975552ade65&imgtype=0&src=http%3A%2F%2Fimg18.3lian.com%2Fd%2Ffile%2F201709%2F08%2Fc4b6815edcad535afdf16471feb54b84.jpg',  
-          authorName: '惊讶comedy',  
-          timestamp: '前天',  
-          location: '五道口'  
-      },
-      articleData: {
-          text: '距离下个周末还有4天，但距离跟周末等量的快乐机会，只有几个小时。今晚七点半，来五道口706青年空间，听一场单口戏剧开放麦，提前体验周末般的快乐能量~',  
-          picture: {  
-              src: 'https://s1.ax1x.com/2018/08/26/PqEzB4.png'
-          }
-      },
-      communityData: {
-          hasFire: false,  
-          fireCount: 46,  
-          commentCount: 12  
-      }
-    },
-    {
-      id: '2',  
       articleType: 'text',  
       metaData: {
           authorAvatar: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535306273419&di=ab12600e16f7c049dbdbccec0ebc9114&imgtype=0&src=http%3A%2F%2Fimg5q.duitang.com%2Fuploads%2Fitem%2F201502%2F06%2F20150206172230_eYKQT.thumb.700_0.jpeg',  
@@ -232,7 +211,28 @@ export default {
           fireCount: 46,  
           commentCount: 34  
       }
-    }]
+    },
+    {
+        id: '2',
+        articleType: 'picture',
+        metaData: {
+          authorAvatar: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535305796801&di=9d69779247641f8daca52975552ade65&imgtype=0&src=http%3A%2F%2Fimg18.3lian.com%2Fd%2Ffile%2F201709%2F08%2Fc4b6815edcad535afdf16471feb54b84.jpg',
+          authorName: '惊讶comedy',
+          timestamp: '前天',
+          location: '五道口'
+        },
+        articleData: {
+          text: '距离下个周末还有4天，但距离跟周末等量的快乐机会，只有几个小时。今晚七点半，来五道口706青年空间，听一场单口戏剧开放麦，提前体验周末般的快乐能量~',
+          picture: {
+            src: 'https://s1.ax1x.com/2018/08/26/PqEzB4.png'
+          }
+        },
+        communityData: {
+          hasFire: false,
+          fireCount: 46,
+          commentCount: 12
+        }
+      }]
   }, {
     id: '3',
     name: '融泽嘉园',
@@ -285,6 +285,24 @@ export default {
     }],
     squareArticles: [{
       id: '2',
+      articleType: 'text',
+      metaData: {
+        authorAvatar: 'https://s1.ax1x.com/2018/08/25/PHof0A.jpg',
+        authorName: '千龙网',
+        timestamp: '刚刚',
+        location: '融泽嘉园'
+      },
+      articleData: {
+        text: '近日接到市民举报，融泽嘉园北面的工地天天半夜还在施工，扰乱了附近住户的正常休息。昌平区回龙观镇政府回复：融泽嘉园小区北侧为京张高铁工地，施工单位为中铁七局、中铁六局，正在进行修建高铁作业。对此，执法人员找到现场负责人，要求其加强施工现场管理，并合理安排工期，杜绝夜间施工行为。',
+      },
+      communityData: {
+        hasFire: false,
+        fireCount: 873,
+        commentCount: 58
+      }
+    },
+    {
+      id: '2',
       articleType: 'picture',
       metaData: {
           authorAvatar: 'https://s1.ax1x.com/2018/08/25/PHoVW8.jpg',
@@ -323,24 +341,6 @@ export default {
           hasFire: false,
           fireCount: 8,
           commentCount: 2
-      }
-    },
-    {
-      id: '2',
-      articleType: 'text',
-      metaData: {
-          authorAvatar: 'https://s1.ax1x.com/2018/08/25/PHof0A.jpg',
-          authorName: '千龙网',
-          timestamp: '刚刚',
-          location: '融泽嘉园'
-      },
-      articleData: {
-          text: '近日接到市民举报，融泽嘉园北面的工地天天半夜还在施工，扰乱了附近住户的正常休息。昌平区回龙观镇政府回复：融泽嘉园小区北侧为京张高铁工地，施工单位为中铁七局、中铁六局，正在进行修建高铁作业。对此，执法人员找到现场负责人，要求其加强施工现场管理，并合理安排工期，杜绝夜间施工行为。',
-      },
-      communityData: {
-          hasFire: false,
-          fireCount: 873,
-          commentCount: 58
       }
     }]
   }, {
