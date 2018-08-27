@@ -79,6 +79,11 @@ export default {
             },{
               src: 'https://s1.ax1x.com/2018/08/24/P7XgBD.jpg'
           }]
+      },
+      communityData: {
+        hasFire: false,
+        fireCount: 678,
+        commentCount: 288
       }
     },
     {
