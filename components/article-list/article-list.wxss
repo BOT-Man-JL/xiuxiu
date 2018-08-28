@@ -146,15 +146,16 @@
 .list-item .item-action-left {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100px;
+  justify-content: start;
+  flex: 5;
 }
 
 .list-item .icon-with-text {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
   align-items: flex-end;
+  width: 66px;
 }
 
 .list-item .action-icon {
@@ -170,7 +171,8 @@
 
 .list-item .item-action-right {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: flex-end;
   flex: 1;
 }
 
